@@ -97,5 +97,43 @@ Operadores aritméticos
 - Caractere = "Gustavo" "Algoritmo" "123"
 - Lógico = verdadeiro falso
 
+## Estruturas condicionais
+// Sempre usar identação no código.
+
+```
+alforitmo "ParOuImpar"
+var
+	N: Inteiro
+inicio
+	Escreva("Digite um número qualquer: ")
+	Leia (N)
+	Se (N % 2 = 0) entao
+		Escreval("O número ", N, "é PAR")
+	senao
+		Escreval("O número ", N, "é ÍMPAR")
+	FimSe
+finalgoritmo
+
+---
+
+algoritmo "CalculoIMC"
+var
+	M, A, IMC: Real
+inicio
+		Escreva("Massa (Kg): ")
+		Leia(M)
+		Escreva ("Altura (M): ")
+		Leia(A)
+		IMC <- M / (A ^ 2)
+		Escreval("IMC: ", IMC:5:2)
+		Se(IMC >= 18.5) e (IMC < 25) entao
+				Escreva("Parabéns! Você está no seu peso ideal")
+		senao
+				Escreva("Você não está na sua faixa de peso ideal")
+		FimSe
+finalgoritmo
+
+```
+
 # Anotações
 // Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
