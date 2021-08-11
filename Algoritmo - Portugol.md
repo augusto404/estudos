@@ -1,6 +1,10 @@
 # Exemplos
-// VisualG
-// Portugol
+
+[Curso - Playlist YouTube](https://youtu.be/7gGFHzqh4d8?list=PLHz_AreHm4dmSj0MHol_aoNYCSGFqvfXV)
+
+// Ferramenta que uso: Acode (Editor de código mobile)
+
+// Linguagen: Portugol
 
 ```
 Algoritmo "MeuNome"
@@ -132,6 +136,99 @@ inicio
 				Escreva("Você não está na sua faixa de peso ideal")
 		FimSe
 finalgoritmo
+```
+
+---
+
+### Estruturas Condicionais Alinhadas
+
+```
+
+algoritmo "Aluno"
+var
+	N1, N2, M: Real
+inicio
+	Escreva("Primeira nota: ")
+	Leia(N1)
+	Escreva("Segunda nota: ")
+	Leia(N2)
+	M <- (N1 + N2) / 2
+	Se (M >=7) entao
+		Escreva("Aluno APROVADO")
+	senao
+		Se (M >= 5)
+			Escreval ("Aluno em RECUPERAÇÃO")
+		senao
+			Escreval ("Aluno REPROVADO")
+		FimSe
+	FimSe
+finalgoritmo
+
+---
+
+algoritmo "CalculoIMC_V2"
+var
+	M, A, IMC: Real
+inicio
+		Escreva("Massa (Kg): ")
+		Leia(M)
+		Escreva ("Altura (M): ")
+		Leia(A)
+		IMC <- M / (A ^ 2)
+		Escreval("IMC: ", IMC:5:2)
+		Se (IMC < 17) entao
+			Escreval ("Muito abaixo do peso")
+		senao
+				Se (IMC >= 17) e (IMC < 18.5)
+					Escreval ("Abaixo do peso")
+				senao
+					Se (IMC >= 18.5) e (IMC < 25) entao
+						Escreval ("Peso ideal")
+						senao
+							se (IMC >= 25) e (IMC < 30) entao
+								Escreval ("Sobrepeso")
+							senao
+								Se (IMC >= 30) e (IMC < 35) entao
+									Escreval ("Obesidade")
+								senao
+									Se (IMC >= 35) e (IMC < 40)
+										Escreval ("Obesidade severa")
+									senao
+										Escreval ("Obesidade mórbida")
+									FimSe
+								FimSe
+							FimSe
+					FimSe
+				FimSe
+		FimSe
+finalgoritmo
+
+---
+
+algoritmo "Salário"
+var
+	Nome: Caractere
+	Sal, NSal: Real
+	Dep: Inteiro
+inicio
+	Escreva ("Qual o nome do funcionário? ")
+	Leia (Nome)
+	Escreva ("Qual o salário? R$ ")
+	Leia (Sal)
+	Escreva ("Qual a quantidade de dependente? ")
+	Leia (Dep)
+	Escolha (Dep)
+		Caso 0
+			NSal <- (Sal * 5 / 100)
+		Caso 1, 2, 3
+			NSal <- (Sal * 10 / 100)
+		Caso 4, 5, 6
+			NSal <- (Sal * 15 / 100)
+		OutroCaso
+			NSal <- (Sal * 18 / 100)
+	FimEscolha
+finalgoritmo
+
 
 ```
 
