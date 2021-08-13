@@ -232,5 +232,54 @@ finalgoritmo
 
 ```
 
+---
+
+### Estruturas De Repetição
+
+### Enquanto
+```
+algoritmo "ConteAte10"
+var
+	contador: inteiro
+inicio
+	Enquanto (contador <- 0) faca
+		Escreval (contador)
+		contador <- contador + 1
+	FimEnquanto
+finalgoritmo
+```
+#### Repita
+```
+algoritmo "ConteAte10_V2"
+var
+	cont: inteiro
+inicio
+	cont <- 1
+	Repita
+		Escreval (cont)
+		cont <- cont + 1
+	Ate (cont > 10)
+finalgoritmo
+
+---
+
+algoritmo "ContarNegativos"
+var
+	N, C, TotN: Inteiro
+inicio
+	C <- 1
+	TotN <- 0
+	Repita
+		Escreva ("Digite um número: ")
+		Leia (N)
+		Se (N < 0) entao
+			TotN <- TotN + 1
+		FimSe
+		C <- C + 1
+	Ate (C > 5)
+	Escreval ("Foram digitados ", TorN, " valores negativos.")
+finalgoritmo			
+```
+
 # Anotações
 // Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
