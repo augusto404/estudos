@@ -278,7 +278,71 @@ inicio
 		C <- C + 1
 	Ate (C > 5)
 	Escreval ("Foram digitados ", TorN, " valores negativos.")
-finalgoritmo			
+finalgoritmo
+
+---
+
+algoritmo "NumeroPrimo"
+var
+	C, N, ContDiv: inteiro
+Inicio
+	C <- 1
+	ContDiv <- 0
+	Escreva ("Digite um número: ")
+	Leia (N)
+	Repita
+		Se (N % C = 0) entao
+			ContDiv <- ContDiv + 1
+		FimSe
+		C <- C + 1
+	Ate (C > N)
+	Se (ContDiv > 2) entao
+		Escreval ("O valor ", N, " não é primo")
+	senao
+		Escreval ("O valor ", N, "é primo")
+	FimSe
+FimAlforitmo
+```
+
+#### Para
+
+```
+Algoritmo "Contar"
+Var
+	C: Inteiro
+Inicio
+	Para C + 1 ate 10
+FimAlgoritmo
+
+---
+
+Algoritmo "ValoresPares"
+Var
+	Cont, V: Inteiro
+Inicio
+	Escreva ("Digite um valor: ")
+	Leia (V)
+	Se (V % 2 = 1) então
+		V <- V - 1
+	FimSe
+	Para Cont <- V ate 0 passo -2 faca
+		Escreval (Cont)
+	FimPara
+FimAlgoritmo
+
+---
+
+Algoritmo "Combinações"
+Var
+	C1, C2: Inteiro
+Inicio
+	Para C1 <- 1 ate 3 faca
+		Para C2 <- 1 ate 3 faca
+			Escreval (C1, C2)
+		FimPara
+	FimPara
+FimAlgoritmo
+
 ```
 
 # Anotações
