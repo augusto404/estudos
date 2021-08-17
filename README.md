@@ -1,6 +1,6 @@
 # Estudos
 
-Aqui é onde coloco algumas coisas que vou aprendendo com relação a programação, obviamente.
+Aqui é onde coloco algumas coisas que vou aprendendo com relação a programação.
 
 No momento que estou fazendo esse ReadMe, ainda estou aprendendo lógica de programação, então estarei colocando meus exercícios e anotações aqui.
 
