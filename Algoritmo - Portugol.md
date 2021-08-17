@@ -170,17 +170,17 @@ algoritmo "CalculoIMC_V2"
 var
 	M, A, IMC: Real
 inicio
-		Escreva("Massa (Kg): ")
-		Leia(M)
-		Escreva ("Altura (M): ")
-		Leia(A)
-		IMC <- M / (A ^ 2)
-		Escreval("IMC: ", IMC:5:2)
-		Se (IMC < 17) entao
-			Escreval ("Muito abaixo do peso")
-		senao
-				Se (IMC >= 17) e (IMC < 18.5)
-					Escreval ("Abaixo do peso")
+	Escreva("Massa (Kg): ")
+	Leia(M)
+	Escreva ("Altura (M): ")
+	Leia(A)
+	IMC <- M / (A ^ 2)
+	Escreval("IMC: ", IMC:5:2)
+	Se (IMC < 17) entao
+		Escreval ("Muito abaixo do peso")
+	senao
+			Se (IMC >= 17) e (IMC < 18.5)
+				Escreval ("Abaixo do peso")
 				senao
 					Se (IMC >= 18.5) e (IMC < 25) entao
 						Escreval ("Peso ideal")
@@ -345,5 +345,42 @@ FimAlgoritmo
 
 ```
 
+---
+
+### Rotinas
+#### Procedimentos
+
+```
+Algoritmo "DetectorPesado"
+Var
+	I: inteiro
+	N, Pesado: Caractere
+	P, Mai: Real
+Procedimento Topo()
+Inicio
+	LimpaTela
+	Escreval ("---------------------------------")
+	Escreval ("D E T E C T O R  D E  P E S A D O")
+	Escreval ("Maior peso até agora: ", Mai, "KG")
+	Escreval ("---------------------------------")
+FimProcedimento
+Inicio
+	Topo()
+		Para I receve 1 ate 5 faca
+			Escreval ("Digite o nome: ")
+			Leia (N)
+			Escreval ("Digite um peso de ", N, ": ")
+			Leia (P)
+			Se (P>Mai) entao
+				Mai <- P
+				Pesado <- N
+			FimSe
+			Topo()
+		FimPara
+Topo()
+Escreval ("A pessoa mais pesada foi ", Pesado, ", com ", Mai, "Kg ")
+FimAlgoritmo
+```
+
 # Anotações
-// Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
+- [ ] Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
