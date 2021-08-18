@@ -1,8 +1,8 @@
-[Curso de Linux Mint](https://youtube.com/playlist?list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
+[Curso de Linux Mint - Curso Em Vídeo](https://youtube.com/playlist?list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
 
 # Comandos
 
-**Linguagem: Bash**
+**Terminal: Bash**
 
 Todos os comandos são feitos em letra minúscula
 
