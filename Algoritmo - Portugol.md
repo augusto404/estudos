@@ -382,5 +382,54 @@ Escreval ("A pessoa mais pesada foi ", Pesado, ", com ", Mai, "Kg ")
 FimAlgoritmo
 ```
 
+### Funções
+> Funções retornam valores, procedimentos não.
+
+```
+Algoritmo "SomaFuncao"
+Var
+	V1, V2, S: Inteiro
+
+Funcao Soma(X + Y: Inteiro): Inteiro
+Inicio
+	Retorne X + Y
+FimFuncao
+
+Inicio
+	Escreval ("Digite o primeiro número: ")
+	Leia (N1)
+	Escreval ("Digite o segundo número: ")
+	Leia (N2)
+	S <- Soma(V1, V2)
+	Escreval ("A soma entre ", V1, " e ", V2, " é igual a ", S)
+FimAlgoritmo
+
+```
+
+### Vetores
+> Vetores permitem uma variável armazenar varios valores juntos de forma ordenada.
+
+```
+Algoritmo "ValoresPares"
+Var
+	val: vetor[1..7] de Inteiro
+	i, TotPar: Inteiro
+Inicio
+	TotPar <- 0
+	Para i <- 1 ate 7 faca
+		Escreva ("Digite o ", i, " valor: ")
+		Leia (val[i])
+	FimPara
+
+	Para i <- 1 ate 7 faca
+		se (val[i] % 2 = 0) entao
+			TotPar <- TotPar + 1
+			Escreval ("Valor PAR na posição: ", i)
+		FimSe
+	FimPara
+	Escreval ("O total de pares foi: ", TotPar)
+FimAlgoritmo
+```
+
 # Anotações
 - [ ] Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
