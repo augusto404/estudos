@@ -457,5 +457,47 @@ Inicio
 FimAlgoritmo
 ```
 
+### Matrizes
+
+```
+Algoritmo "LerMatriz"
+Var
+	mat: vetor [1..3, 1..2] de inteiro
+	l, c: inteiro
+Inicio
+	Para l <- 1 ate 3 faca
+		Para c <- 1 ate 2 faca
+			Escreva ("Digite um valor: ")
+			Leia (mat[l, c])
+		FimPara
+	FimPara
+FimAlgoritmo
+
+---
+
+Algoritmo "MatrizIdentidade"
+Var
+	mID: vetor [1..3, 1..3] de inteiro
+	i, j: inteiro
+Inicio
+	Para i <- 1 até 3 faca
+		Para j <- 1 ate 3 faca
+			Se (i = j) entao
+				mID [i,j] <- 1
+			Senao
+				mID [i,j] <- 0
+			FimSe
+		FimPara
+	FimPara
+
+	Para i <- 1 ate 3 faca
+		Para j <- 1 ate 3 faca
+			Escreva (mID [i,j]:3)
+		FimPara
+		Escreval ()
+	FimPara
+FimAlgoritmo
+```
+
 # Anotações
 - [ ] Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
