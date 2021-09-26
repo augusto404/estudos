@@ -1,3 +1,1 @@
-# Estudos
-
-Aqui é onde coloco algumas coisas que vou aprendendo com relação a programação.
+Esse será meu repositório principal, onde colocarei meu material de estudo.
