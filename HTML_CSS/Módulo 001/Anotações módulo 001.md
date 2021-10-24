@@ -298,4 +298,3 @@ Usar [este site](http://www.iana.org/assignments/media-types/media-types.xhtml) 
 [Para ver os principais formatos de midia para colocar no parâmetro, clique aqui e acesse o pdf do Gustavo Guanabara](https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf)
 
 ## Imagens Dinâmicas [Exercício 11]
-> Imagens menores ficam acima hierarquicamente.
