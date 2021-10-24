@@ -296,3 +296,5 @@ Usar a propriedade `<type="application/tipo_de_midia">` na tag de referência ao
 Usar [este site](http://www.iana.org/assignments/media-types/media-types.xhtml) para a consulta dos tipos de mídia para serem citados na propriedade `type`.
 
 [Para ver os principais formatos de midia para colocar no parâmetro, clique aqui e acesse o pdf do Gustavo Guanabara](https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf)
+
+## Imagens Dinâmicas [Exercício 11]
