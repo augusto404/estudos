@@ -498,6 +498,3 @@ Inicio
 	FimPara
 FimAlgoritmo
 ```
-
-# Anotações
-- [ ] Fazer o curso do code.org, ele usa o mesmo sistema do Scratch de blocos ligados uns aos outros.
