@@ -297,4 +297,15 @@ Usar [este site](http://www.iana.org/assignments/media-types/media-types.xhtml) 
 
 [Para ver os principais formatos de midia para colocar no parâmetro, clique aqui e acesse o pdf do Gustavo Guanabara](https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf)
 
-## Imagens Dinâmicas [Exercício 11]
+## Mídias [Exercício 11]
+Para imagens, áudio e vídeo, use arquivos com tamanhos e formatos leves, pois o tamanho influencia no carregamento e desempenho do site rodando em qualquer navegador.
+
+### Áudio
+Na tag `<audio>`, colocamos o parâmetro `preload="metadata"` para o pré carregamento do áudio, se colocar em `none`não havera pré carregamento, e `auto` poderá ocasionar em incopatibilidades.
+
+### Vídeo
+> [Pexels](https://www.pexels.com)
+
+> Use o [HandBrake](https://handbrake.fr/) para converter vídeos.
+
+Evitar hospedagem local. Acima de 1080p não vale a pena.
