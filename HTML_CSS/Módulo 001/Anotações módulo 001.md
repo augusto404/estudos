@@ -300,6 +300,8 @@ Usar [este site](http://www.iana.org/assignments/media-types/media-types.xhtml) 
 ## Mídias [Exercício 11]
 Para imagens, áudio e vídeo, use arquivos com tamanhos e formatos leves, pois o tamanho influencia no carregamento e desempenho do site rodando em qualquer navegador.
 
+Criar uma tag simples de algum tipo de mídia pode ser contraprodutivo, o melhor a se fazer é usar várias sources com formatos de arquivos diferentes, assim o navegador terá menos problemas de reprodução.
+
 ### Áudio
 Na tag `<audio>`, colocamos o parâmetro `preload="metadata"` para o pré carregamento do áudio, se colocar em `none`não havera pré carregamento, e `auto` poderá ocasionar em incopatibilidades.
 
@@ -308,4 +310,14 @@ Na tag `<audio>`, colocamos o parâmetro `preload="metadata"` para o pré carreg
 
 > Use o [HandBrake](https://handbrake.fr/) para converter vídeos.
 
-Evitar hospedagem local. Acima de 1080p não vale a pena.
+- Evitar hospedagem local.
+- Acima de 1080p não vale a pena.
+-Dar preferência por ter vários formatos de vídeos em seu site, assim evita possíveis incompatibilidades.
+
+Uma das melhores alternativas é a hospedagem de vídeos no YouTube e incorpora-los no html.
+
+#### Ferramentas De Hospedagem De Vídeos
+- YouTube (Upload não listado)
+- Vimeo
+
+> O lado ruim do YT é que a chance de piratearem seu conteúdo é maior.
