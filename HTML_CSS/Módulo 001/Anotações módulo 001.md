@@ -321,3 +321,34 @@ Uma das melhores alternativas é a hospedagem de vídeos no YouTube e incorpora-
 - Vimeo
 
 > O lado ruim do YT é que a chance de piratearem seu conteúdo é maior.
+
+---
+> Começa agora as anotações sobre CSS.
+
+## Estilos de CSS [Exercício 013]
+Os três tipos de CSS podem ser misturados no mesmo arquivo.
+
+### Inline
+Usado apenas para alterações pontuais em apenas uma linha. Preferêncialmente, evite usar estilos inline.
+
+### Internos
+A tag `<style>` deve ser colocada no `<head>`. Nesse modo de estilo, utilisam-se de seletores. Você indica ao CSS em qual tipo de tag ele deve agir, fazendo com que os estilos sejam aplicados de forma simultânea em várias tags da mesma categoria.
+
+As desvantagens de usar essa forma de CSS é que o estilo vai ocupar muito espaço visual no documento html. Além disso, o estilo feito em uma página fica restrito apenas aquela página.
+
+Use apenas para estilos mais simples.
+
+### Externos
+A melhor forma de fazer um CSS, o documento com os estilos pode ser linkado com mais de uma página.
+
+> CTRL + Clique com botão direito no arquivo inexistente = criar nova página.
+
+Na criação do documento externo, lembrar de especificar `@charset "UTF-8";` para evitar incompatibilidades de simbolos.
+
+> Tudo que tem `@` é uma regra para o documento CSS, assim como o `head` para o documento HTML.
+
+Os links em CSS podem ser somados em uma pápina, permitindo que possa haver estilos apenas para algumas páginas selecionadas e outro estilo principal.
+
+---
+
+FIM DO CAPÍTULO!
