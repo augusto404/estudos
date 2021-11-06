@@ -2,9 +2,7 @@
 Este repositório será usado para armazenar meus materiais de exercícios e anotações de estudo.
 > Dentro dos documentos em .md e nos próprios exercícios eu deixo anotações e algumas dicas pessoais sobre determinado assunto.
 
-## Um Detalhe
-Por eu estudar pelo celular, não conheço uma maneira de fazer push e commits de forma eficiênte e rápida, então a minha frequência de uploads de arquivos será inconsistênte, mas estou estudando quase todos os dias.
-Assim que souber uma maneira de resolver isso, começarei a tentar fazer push diariamente.
+Por eu estudar pelo celular, não conheço uma maneira de fazer push e commits de forma eficiênte e rápida, já que não existe Git para smartphones. Estudo utilizando o [Acode](https://play.google.com/store/apps/details?id=com.foxdebug.acodefree&hl=pt_BR&gl=US) e faço os uploads dos arquivos manualmente.
 
-## Uma alternativa
-Recentemente conheci o [Gitpod](https://www.gitpod.io/). É um editor de código online, eu testei para celular e não funciona bem no navegador, mas se você usa um PC mais fraco e quer ter um ambiente de desenvolvimento pelo navegador é uma boa alternativa. São 50 horas gratuitas por mês.
+## Alternativas
+Exitem alguns editores de código online como o [Gitpod](https://www.gitpod.io/), o [VsCode Online](vscode.dev), e o [editor do próprio GitHub](github.dev). Todos eles tem uma interface parecida e são bem úteis e servem de alternativa para quem não pode ter um ambiente de desenvolvimento local.
