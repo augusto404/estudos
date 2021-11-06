@@ -1,7 +1,7 @@
 # Módulo 002
-[Playlist - YT](https://youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s)
-[Material em PDFs](https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf)
-https://gustavoguanabara.github.io
+- [Playlist - YT](https://youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s)
+- [Material em PDFs](https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf)
+- https://gustavoguanabara.github.io
 
 ## Fundamentos Básicos do Design [Exercício 001 | Capítulo 013]
 ### Maneiras de representar cores em CSS
