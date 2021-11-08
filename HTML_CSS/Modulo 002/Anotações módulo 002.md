@@ -37,12 +37,20 @@
 > - Os conceitos podem ser misturados: cores análogas e uma cor complementar na mesma paleta.
 
 ### Paleta de cores
-#### Ferramentas para criar paletas de cores
+#### Ferramentas
 - [Coolors](coolors.co)
 - [Adobe color](color.adobe.com)
 - [Paletton](https://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF)
+- [Colorzilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-BR)
 
-#### Capturar cores na tela
-[Colorzilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=pt-BR)
+### Gradiente
+```css
+body {
+    background-image: linear gradient(to right, white, blue);
+}
+```
+> - Direção, vírgula, cores
+> - A direção pode ser indicada em graus (90deg)
 
-> Essa extensão tem maior acertividade na identificação de cores.
+> `*` é um seletor global
+
