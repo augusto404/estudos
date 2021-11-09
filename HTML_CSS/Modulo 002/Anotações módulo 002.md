@@ -3,7 +3,7 @@
 - [Material em PDFs](https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf)
 - https://gustavoguanabara.github.io
 
-## Fundamentos Básicos do Design [Exercício 001 | Capítulo 013]
+## Fundamentos Básicos do Design [Exercício 016]
 ### Maneiras de representar cores em CSS
 - Por nome
 - Hexadecimal (Escala que vai de 1 - 9 e A - F)
@@ -51,6 +51,39 @@ body {
 ```
 > - Direção, vírgula, cores
 > - A direção pode ser indicada em graus (90deg)
+> - `*` é um seletor global
 
-> `*` é um seletor global
+## Tipografia [Exercício 017]
+> Procurar sempre a simetria e hamonia de cores na construção de um site, pois isso gera conforto visual.
+
+- Ao desenvolver uma fonte tipográfica, usasse a letra `x` como referêcia principal da altura base e formato.
+- Existe a altura das minúsculas (definida pela letra `x`) e a altura das maiúsculas.
+- A altura do vasamento de letras como g e b se chamam `ascendente` para a parte superior e `descendente` para a parte inferior.
+- A altura total se chamam `corpo`.
+- Use cores contrastantes (complementares) para elaborar um layout de leitura confortável.
+    > O padrão mais comum é fundo branco e letra preta.
+
+### Categoria de fontes
+- Fontes `monoespaçadas` são ótimas para representação de codigo.
+- Fontes `com e sem serifa` geralmente são direcionadas a textos longos e coisas de teor formal.
+- Fontes `display` são fontes comemorativas e usadas com o teor decorativo, não seguem tanto as regras aplicadas nas categorias citadas anteiormente.
+
+> Procurar por "css safe font combinations" para saber mais as combinações de fontes que não dão problemas de incompatibilidade entre dispositivos.
+
+> [Site citado no vídeo](https://www.w3schools.com/)
+
+- Usando parâmetros como `sans-serif` ou `serif` no estilo em `font-family:` no css fazem com que o dispositivi reproduza qualquer **fonte genérica** que ele tiver dentro dos parâmetros pré-estabalecidos.
+
+
+### Tamanho de fontes e suas medidas
+#### Medidas absolutas
+cm, mm, in, px, pt, pc
+> A representação dessas medidas em diferentes dispositivos pode variar.
+
+#### Medidas relativas
+em (altura da letra maiúscula), ex (altura da letra minúscula), rem, vw (relativo ao width da tela), vh (relativo ao height da tela), %
+
+- Para `medida de fontes`, recomenda-se o uso do **px** ou **em**.
+- A nomeclatura em **px** é usada para `layout de impressão.`
+- A medição em `em` se baseia no tamanho padrão da fonte.
 
