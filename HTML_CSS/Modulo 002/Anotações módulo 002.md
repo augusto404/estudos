@@ -70,6 +70,8 @@ body {
 
 > Procurar por "css safe font combinations" para saber mais as combinações de fontes que não dão problemas de incompatibilidade entre dispositivos.
 
+> Para colocar o nome de fontes que tem mais de uma palavra, utiliza-se ('). Exemplo: `'work sans'`
+
 > [Site citado no vídeo](https://www.w3schools.com/)
 
 - Usando parâmetros como `sans-serif` ou `serif` no estilo em `font-family:` no css fazem com que o dispositivi reproduza qualquer **fonte genérica** que ele tiver dentro dos parâmetros pré-estabalecidos.
@@ -86,4 +88,33 @@ em (altura da letra maiúscula), ex (altura da letra minúscula), rem, vw (relat
 - Para `medida de fontes`, recomenda-se o uso do **px** ou **em**.
 - A nomeclatura em **px** é usada para `layout de impressão.`
 - A medição em `em` se baseia no tamanho padrão da fonte.
+
+### Peso, estilo e shorthand
+Quando for mexer com o peso da fonte, use `font-weight` + `lighter`/ `normal` / `bold` / `bolder`
+Para deixar a fonte em itálico use `font-style: italic;`
+
+> - Nem todas as fontas tem essas variações.
+> - Podem ser usados valores entre **100** a **900** para representar a variação entre esses estilos.
+
+> Essas formas de peso e estilo podem ser usadas como melhores substituições das tags em HTML de negrito e itálico.
+
+#### Shorthand
+São formas de encurtar e resumir o código.
+
+A forma de aplicar esse atalho segue uma ordem especifica. 
+
+Exemplo:
+```css
+h1 {
+    font: italic bolder 3em 'Work Sans', sans-serif;
+    /* shorthand font 
+    Hierarquia: font-style -> font-weight -> font-size -> font-family */
+}
+```
+
+### Usando fontes externas
+[Google Fonts](fonts.google.com)
+
+> Lembre-se de sempre colocar uma fonte genérica como ultima opção dentre as fontes personalizadas que forem selecionadas.
+
 
