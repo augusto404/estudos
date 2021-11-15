@@ -113,8 +113,32 @@ h1 {
 ```
 
 ### Usando fontes externas
-[Google Fonts](fonts.google.com)
+- [Google Fonts](fonts.google.com)
+    > Dentre as alternativas, Google fonts é a melhor. Tanto pela maior facilidade de adicionar as fontes, quanto por ser uma forma mais leve que o site carregar um arquivo local.
+- [Dafont](https://www.dafont.com/pt/)
+
+Ao baixar uma fonte, coloque o `@font-face` na folha css de forma manual.
+
+```css
+@font-face {
+    font-family: 'Nome de referência da fonte';
+    src: url('love larry.otf') format('opentype'), url('love larry.ttf') format('truetype');
+    /*
+    Tipos de `format()`
+    - opentype (otf)
+    - truetype (ttf)
+    - embedded-opentype
+    - truetype-aat (Apple Advanced Typography)
+    - svg
+    */
+    font-weight: normal;
+    font-style: normal;
+}
+```
+Conforme mostrado no exemplo, se for adicionar mais de um formato da mesma fonte, use uma vírgula após citar o format().
 
 > Lembre-se de sempre colocar uma fonte genérica como ultima opção dentre as fontes personalizadas que forem selecionadas.
 
+> Se for colocar a fonte em uma pasta separada, lembrar de citar o diretório.
 
+> Preferêncialmente, escolha os formatos **.otf** e **.ttf**. Há um menor risco de incompatibilidades.
