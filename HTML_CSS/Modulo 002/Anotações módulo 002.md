@@ -135,10 +135,29 @@ Ao baixar uma fonte, coloque o `@font-face` na folha css de forma manual.
     font-style: normal;
 }
 ```
-Conforme mostrado no exemplo, se for adicionar mais de um formato da mesma fonte, use uma vírgula após citar o format().
+Conforme mostrado no exemplo, se for adicionar mais de um formato da mesma fonte, use uma vírgula após citar o `format()`.
 
 > Lembre-se de sempre colocar uma fonte genérica como ultima opção dentre as fontes personalizadas que forem selecionadas.
 
 > Se for colocar a fonte em uma pasta separada, lembrar de citar o diretório.
 
 > Preferêncialmente, escolha os formatos **.otf** e **.ttf**. Há um menor risco de incompatibilidades.
+
+### Capturando fontes
+#### Pegar fontes diretamente do site
+- [Fonts Ninja](https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh)
+
+#### Pegar fontes de imagens
+- [Mais acertivo - Font Finder](https://www.whatfontis.com/)
+- [Font Squirrel](https://www.fontsquirrel.com/)
+- [Myfonts](https://www.myfonts.com/)
+
+## Alinhamento dos textos em CSS [Exercício 017]
+Para alinhar um texto, use `text-align: ;` em css.
+
+Identação / afastamento do início de um parágrafo:
+```css
+ p {
+    text-indent: 30px;
+    }
+```
