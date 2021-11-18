@@ -161,3 +161,18 @@ Identação / afastamento do início de um parágrafo:
     text-indent: 30px;
     }
 ```
+
+## Usando id [Exercício 019]
+- Seletor de id = #
+
+    Ao colocar um id em um elemento, ele poderá ser formatado individualmente em uma folha css.
+    ```html
+    <h1 id="principal">Criando sites com HTML e CSS</h1>
+    ```
+    ```css
+    h1#principal {
+    text-align: center;
+    }
+    ```
+    > Pode ser usado `#principal` também, mas quando não é especificado o elemento, qualquer outro elemento que tiver o mesmo id será formatado em conjunto.
+- Seletor de classe = .
