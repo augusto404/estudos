@@ -13,7 +13,7 @@
 > Passando o mouse pela cor predefinida permite a escolha de tonalidade e luminosidade. Clicando na barra com o formatado de representação das cores, há a possibilidade de mudar os modos de exibição.
 
 ### Armonia de cores
-<iframe width="560" height="315" src="https://www.youtube.com/embed/E2gaDa4ZaTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[Vídeo falando sobre a armonia de cores](https://www.youtube.com/embed/E2gaDa4ZaTc)
 <br><br>
 <img src="https://www.sessions.edu/wp-content/uploads/2-12.jpg" width="200">
 
@@ -175,4 +175,55 @@ Identação / afastamento do início de um parágrafo:
     }
     ```
     > Pode ser usado `#principal` também, mas quando não é especificado o elemento, qualquer outro elemento que tiver o mesmo id será formatado em conjunto.
+    
+    IDs devem ser únicos em um documento.
 - Seletor de classe = .
+    
+    As classes podem ser usadas repetidas vezes dentro do mesmo documento, diferente dos IDs.
+    > Dê nomes aos seus IDs e Classes baseados na função, e não na forma. Isso pode gerar confusões futuras.
+    
+    Para aplicar várias classes ao mesmo elemento, apenas coloque um espaço:
+    ```html
+    <h2 class="avancado destaque"></h2>
+    ```
+    IDs e classes podem ser misturados no mesmo elemento:
+    ```html
+    <h1 id="principal" class="destaque"></h1>
+    ```
+
+> A tag `<span>texto</span>` pode ser usada para selecionar um fragmento de texto e aplicar uma formatação específica a ele.
+```html
+<span class="classe">texto</span>
+```
+
+## Pseudo Classes [Exercício 020]
+- `<div>` = Espaço que pode ser formatado
+- `height` = Altura
+- `width` = Largura
+- `display: inline-block;` = usando no CSS, isso fará com que tudo esteja alinhado na mesma linha
+- Para criar a interação de passar o mouse por cima de um elemento, use a pseudo-classe `hover`.
+    ```css
+        div:hover {
+        background-color: yellow;
+    }
+    ```
+- Para formatar uma classe dentro de uma div, use o sina `>` dentro do seletor da div:
+    ```html
+    <div>
+        Passe o mouse aqui.
+        <p>Texto oculto.</p>
+    </div>
+    ```
+    ```css
+        div > p {
+            display:none;
+            /* Isso fará com que, por padrão, o parágrafo fique escondido. */
+        }
+
+        div:hover > p {
+            display: block; /* Comando para mostrar o elemento que estava oculto. */
+            color: white;
+            background-color: red;
+        }
+    ```
+
