@@ -5,8 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* A div que contém a tag <p> como filha, receberá a seguinte formatação. */
+        div > p {
+            display: none;
+        }
+
+        /* Quando o mouse for passado por cima da div, a seguinte formatação acontecerá com a tag filha <p>. */
+        div:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 300px;
+        }
+
+        /* A formatação abaixo é apenas para a div em sí, sem considerar sua tag filha. */
+        div:hover {
+            color: red;
+
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo.</p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto Escondido...</p>
+    </div>
+    <p>Fim do Exemplo</p>
 </body>
 </html>

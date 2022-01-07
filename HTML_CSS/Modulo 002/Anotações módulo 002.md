@@ -197,33 +197,24 @@ Identação / afastamento do início de um parágrafo:
 ```
 
 ## Pseudo Classes [Exercício 020]
-- `<div>` = Espaço que pode ser formatado
-- `height` = Altura
-- `width` = Largura
-- `display: inline-block;` = usando no CSS, isso fará com que tudo esteja alinhado na mesma linha
-- Para criar a interação de passar o mouse por cima de um elemento, use a pseudo-classe `hover`.
-    ```css
-        div:hover {
-        background-color: yellow;
-    }
-    ```
-- Para formatar uma classe dentro de uma div, use o sina `>` dentro do seletor da div:
-    ```html
-    <div>
-        Passe o mouse aqui.
-        <p>Texto oculto.</p>
-    </div>
-    ```
-    ```css
-        div > p {
-            display:none;
-            /* Isso fará com que, por padrão, o parágrafo fique escondido. */
-        }
+As pseudo classes trabalham com estados de um elemento. Ex: ao passar o mouse em determinada área.
+> Pseudo-classes são representadas por `:` dois pontos após o seletor.
 
-        div:hover > p {
-            display: block; /* Comando para mostrar o elemento que estava oculto. */
-            color: white;
-            background-color: red;
-        }
-    ```
+- `height` e `width` são usados para ajuste de altura e largura de um elemento em CSS.
+- Uma `<div>` é um espaço que pode ser formatado com CSS.
 
+> As classes podem ter sub-elementos, usando o sinal `>` dentro do seletor da div podem ser formatados elementos dentro de outros elementos.
+
+## Pseudo Elementos
+Os pseudo-elementos modificam diretamente o conteúdo da tag. Podem ser usados para colocar um conteúdo repetitivo em alguma categoria de tag específica.
+> Pseudo-elementos são representadas por `::` dois pontos duas vezes após o seletor.
+
+## Modelo de Caixas
+- Elementos em **box-level** pulam uma linha do conteúdo anterior e do posterior, ocupando a largura da tela inteira.
+> Para a criação de elementos box-level use a tag `<div>`, por exemplo.
+- Elementos em **inline-level** são alocados dentro do conteúdo presente, sem pular linha.
+> A tag `<span>` é um exemplo.
+- User agent = configurações padrão do navegador
+- Todas as configurações dos parâentros de seletores para as caixas devem ser feitas a partir do sentido horário.
+- Para centralizar **uma caixa** no meio da tela, utilize `margin: auto;` no seletor em CSS.
+- A ordem para as shorthands é: valor, estilo e cor. (Passe o mouse no parâmetro da shorthand para saber a ordem)

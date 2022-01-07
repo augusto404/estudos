@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Os links recebem a formatação a seguir. */
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Para os links que estiverem marcados como visitados, eles receberão as seguntes formatações. */
+        a:visited {
+            color: darkred;
+        }
+
+        /* Ao passar o mouse sobre os links. */
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* A pseudo-classe `active` age quando o link for clicado. */
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: pink;
+        }
+
+        /* O pseudo-elemento adiciona após os links o conteúdo contido no parâmetro `content` ANTES o conteúdo da tag */
+        .especial::before {
+            content: '❝ ';
+            color: purple;
+
+        }
+
+        /* O pseudo-elemento adiciona após os links o conteúdo contido no parâmetro `content` APÓS o conteúdo da tag */
+        .especial::after {
+            content: ' ❞';
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório no GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://cursoemvideo.com/" target="_blank" class="especial">Site do CursoEmVídeo</a></li>
+    </ul>
+</body>
+</html>
