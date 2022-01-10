@@ -205,11 +205,11 @@ As pseudo classes trabalham com estados de um elemento. Ex: ao passar o mouse em
 
 > As classes podem ter sub-elementos, usando o sinal `>` dentro do seletor da div podem ser formatados elementos dentro de outros elementos.
 
-## Pseudo Elementos
+### Pseudo Elementos
 Os pseudo-elementos modificam diretamente o conteúdo da tag. Podem ser usados para colocar um conteúdo repetitivo em alguma categoria de tag específica.
 > Pseudo-elementos são representadas por `::` dois pontos duas vezes após o seletor.
 
-## Modelo de Caixas
+## Modelo de Caixas [Exercício 021]
 - Elementos em **box-level** pulam uma linha do conteúdo anterior e do posterior, ocupando a largura da tela inteira.
 > Para a criação de elementos box-level use a tag `<div>`, por exemplo.
 - Elementos em **inline-level** são alocados dentro do conteúdo presente, sem pular linha.
@@ -218,3 +218,13 @@ Os pseudo-elementos modificam diretamente o conteúdo da tag. Podem ser usados p
 - Todas as configurações dos parâentros de seletores para as caixas devem ser feitas a partir do sentido horário.
 - Para centralizar **uma caixa** no meio da tela, utilize `margin: auto;` no seletor em CSS.
 - A ordem para as shorthands é: valor, estilo e cor. (Passe o mouse no parâmetro da shorthand para saber a ordem)
+
+### Grouping Tags
+As grouping tags são usadas para uma melhor organização do seu site. Ao invés de usar divs para tudo, usando as grouping tags seu site fica mais fácil de trabalhar e terá mais sentido semântico.
+
+- Tags: `<header>`, `<main>`, `<footer>`, `<span>`, `<nav>`, `<section>`, etc...
+
+> A maneira mais fácil de criar uma sombra é utilizando o dev tools do seu navegador.
+
+### Bordas Decoradas
+[Vídeo falando sobre as bordas decoradas](https://youtu.be/n0rjAs_Im4w)
