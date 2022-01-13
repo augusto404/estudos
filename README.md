@@ -1,6 +1,6 @@
 # Material de estudos
 ## Sobre
-Este repositório será usado para armazenar meus materiais de exercícios e anotações de estudo relacionados a programação. O curso que estou focado atualmente é o de HTML e CSS do [CursoemVideo](https://youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s).
+Este repositório será usado para armazenar meus materiais de exercícios e anotações de estudo relacionados a programação. O curso que estou focado atualmente é o de HTML e CSS do [CursoemVideo](https://www.youtube.com/CursoemV%C3%ADdeo).
 
 ## Anotações
 Dentro dos documentos em markdown estão as anotações das aulas. Nos exercícios há comentários feitos por mim, também.
