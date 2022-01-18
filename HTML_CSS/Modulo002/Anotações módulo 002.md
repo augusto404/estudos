@@ -229,4 +229,26 @@ As grouping tags são usadas para uma melhor organização do seu site. Ao invé
 ### Bordas Decoradas
 [Vídeo falando sobre as bordas decoradas](https://youtu.be/n0rjAs_Im4w)
 
-## 
+## Variáveis em CSS
+Uma variável muito útil que permite a padronização de cores em uma folha CSS, por exemplo, é a `:root`.
+
+As cores ficam registradas como padrão dentro da folha CSS.
+
+```css
+/* A variável sempre inicia com os dois traços. OS NOMES DAS VARIÁVEIS MÃO DEVEM CONTER ESPAÇOS. */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+}
+```
+
+Para usar a cor, coloque o parâmetro `background-color: var(nome da variável);`
+
+> O exemplo é com cores, mas pode ser usado para definição de fontes, também.
+
+> Abrindo a função de inspecionar do navegador e minimizando-a, você irá ver no canto superior direito quantos pixels a janela do seu navegador está ocupando. Assim, você poderá ajustar a responisividade do seu site baseando-se nesses valores.
+
