@@ -226,6 +226,8 @@ As grouping tags são usadas para uma melhor organização do seu site. Ao invé
 
 > A maneira mais fácil de criar uma sombra é utilizando o dev tools do seu navegador.
 
+> A tag <aside> é usada para conteúdo periférico no site. Ex: Algo que não tem relação direta com o texto.
+
 ### Bordas Decoradas
 [Vídeo falando sobre as bordas decoradas](https://youtu.be/n0rjAs_Im4w)
 
@@ -252,3 +254,55 @@ Para usar a cor, coloque o parâmetro `background-color: var(nome da variável);
 
 > Abrindo a função de inspecionar do navegador e minimizando-a, você irá ver no canto superior direito quantos pixels a janela do seu navegador está ocupando. Assim, você poderá ajustar a responisividade do seu site baseando-se nesses valores.
 
+
+---
+
+# Anotações extras
+## Listas
+- `list-style-position: inside;`
+    > Define a lista para ficar na parte de dentro da caixa
+- `columns: 2`
+    > Divide a lista em uma quantidade determinada de coluna
+- `list-style-type: '\2714\00A0\00A0';`
+    > - Coloca emoji no lugar dos bullet poins da lista
+        > - Não há compatibilidade com todos os navegadores
+    - Usar `\00A0` para dar espaços em branco
+
+## Margens
+- `margin: -10px -10px 0px -10px;`
+    > Margens negativas podem ser utilizadas para sobreposição de elementos em html
+
+## Dev tools
+- `F12` > `Ctrl` + `Shift` + `M`
+    > Emulação de dispositivo. Use para ver o site em diferentes formatos de tela.
+
+
+## Links
+- `a::after { content: '\1F517'; }` 
+    > No fim da palavra referente ao link, aparecerá um emoji predefinido em `content: ;`
+
+## Iframes
+1. Coloque o iframe dentro de uma div e dê uma classe
+    ```html
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    ```
+2. Ajuste o fundo como relativo e o iframe como absoluto. As medidas são baseadas em porcentagens, assim ficará como uma forma de responsividade.
+    ```css
+    div.video {
+        background-color: var(--cor5);
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 58%;
+        position: relative;
+    }
+
+    div.video iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+    ```
