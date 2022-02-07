@@ -6,3 +6,7 @@
 ## Git e GitHub
 > As anotações do curso de Git e GitHub estão em outra pasta nesse mesmo repositório. [Clique aqui para ser redirecionado](https://github.com/augusto404/estudos/blob/main/Git_GitHub/Git_GitHub.md)
 
+---
+# Anotações extras
+## Atalhos
+- `div.quadrado*3` = Cria três `divs` com a classe "quadrado".
