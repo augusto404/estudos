@@ -6,6 +6,10 @@
 ## Git e GitHub
 > As anotações do curso de Git e GitHub estão em outra pasta nesse mesmo repositório. [Clique aqui para ser redirecionado](https://github.com/augusto404/estudos/blob/main/Git_GitHub/Git_GitHub.md)
 
+## Configurando a posição da imagem no fundo do site
+As imagens são posicionadas baseando-se no tamanho em pixels da imagem usada como background. Se uma imagem for 1980x720 e a div for 200x200, a div irá usar como fundo a parte cortada de 200x200 de dentro da imagem. O posicionamento desse "corte" será, por padrão, no canto superior esquerdo dentro de um elemento. Para mudar a posição, use a propriedade `background-position:` **eixo x** *eixo y* `;`.
+
+
 ---
 # Anotações extras
 ## Atalhos
