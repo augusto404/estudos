@@ -11,7 +11,24 @@
 As imagens são posicionadas baseando-se no tamanho em pixels da imagem usada como background. Se uma imagem for 1980x720 e a div for 200x200, a div irá usar como fundo a parte cortada de 200x200 de dentro da imagem. O posicionamento desse "corte" será, por padrão, no canto superior esquerdo dentro de um elemento. Para mudar a posição, use a propriedade `background-position:` **eixo x** *eixo y* `;`.
 
 ### Mudando o tamanho da imagem de fundo do site
-Ao definir uma imagem como background, use `bkacground-size: cover;` para que sempre fique adaptada independente da viewport.
+Não é obrigatório, mas definir uma cor de fundo do elemento mesmo que vá colocar um baclground depois é algo bom de fazer. Os sites carregam, inicialmente, o conteúdo textual, e, só depois, as imagens.
+
+### Background
+Ao definir uma imagem como background, use `background-size: cover;` para que sempre fique adaptada independente da viewport.
+
+A função de `background-attachment:` é usada para definir o vínculo do fundo em relação ao tamanho da página. Os parâmetros que podem ser dados são: `fixed` (fixo independente da rolagem do conteúdo) e `scroll` (rola o fundo junto com a rolagem do conteúdo.).
+
+Na declaração de parâmetros da propriedade `background` pode ser usada uma **shorthand** na seguinte ordem: *color > image > position > size > repeat > attachment*.
+
+```css
+    background: white url("") center center / cover no-repeat scroll;
+    /* A declaração do size deve vir depois de position, sendo os dois parâmetros separados por uma barra. */
+```
+## Centralização vertical de caixas
+Para mover verticalmente e horizontalmente um elemento de maneira simultânea, use as seguintes especificações:
+[Vídeo - Centralização vertical de caixas](https://youtu.be/-w0Qo_qQiRg)
+
+> A alternativa mais prática é a utilização de flexboxes.
 
 ---
 # Anotações extras
