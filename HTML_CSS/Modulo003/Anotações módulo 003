@@ -34,3 +34,12 @@ Para mover verticalmente e horizontalmente um elemento de maneira simultânea, u
 # Anotações extras
 ## Atalhos
 - `div.quadrado*3` = Cria três `divs` com a classe "quadrado".
+- `text-transform: uppercase;` = Transforma o texto em letra maiúscula.
+    - `font-variant: small-caps;` = Deixa as letras maiúsculas destacadas no texto.
+- Ao usar hover, especificar as tags de forma separada.
+    ```css
+        header a:hover, footer a:hover {
+        ...
+    }
+    ```
+- Dê preferência a unidades de medidas responsivas, como é o caso da `vh` (view height) e `vw`(view width) que pode substituir a porcentagem fixa.
