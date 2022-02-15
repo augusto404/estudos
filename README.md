@@ -16,7 +16,7 @@ Confira meu repositório com [sites úteis relacionados a programação](https:/
   > A história do mascote do Android.
 
 ### Desafio 12
-[Clique aqui para visualizar o desafio](https://augusto404.github.io/estudos/HTML_CSS/desafios/desafio_12/---.html)
+[Clique aqui para visualizar o desafio](https://augusto404.github.io/estudos/HTML_CSS/desafios/desafio_12/cordel.html)
   > Cordel moderno.
 
 <br><br>
