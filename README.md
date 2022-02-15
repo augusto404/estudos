@@ -10,6 +10,9 @@ Dentro dos documentos em markdown estão as anotações das aulas. Nos exercíci
 ## Referências externas
 Confira meu repositório com [sites úteis relacionados a programação](https://github.com/augusto404/coding) e também [sites relacionados a design](https://github.com/augusto404/design).
 
+## Minha grade de estudos atual
+[CLIQUE AQUI](https://trello.com/b/X4QqDtHF/estudos)
+
 ---
 # Curso em Vídeo - HTML/CSS
 ## Desafios
