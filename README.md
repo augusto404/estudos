@@ -8,9 +8,16 @@ Dentro dos documentos em markdown estão as anotações das aulas. Nos exercíci
 ## Referências externas
 Confira meu repositório com [sites úteis relacionados a programação](https://github.com/augusto404/coding) e também [sites relacionados a design](https://github.com/augusto404/design).
 
-## Desafio 10
-[Clique aqui para visualizar o desafio](https://augusto404.github.io/estudos/HTML_CSS/Modulo002/desafio_10/index.html)
-  > Página contando a história do mascote do Android.
+---
+# Curso em Vídeo - HTML/CSS
+## Desafios
+### Desafio 10
+[Clique aqui para visualizar o desafio](https://augusto404.github.io/estudos/HTML_CSS/desafios/desafio_10/android.html)
+  > A história do mascote do Android.
+
+### Desafio 12
+[Clique aqui para visualizar o desafio](https://augusto404.github.io/estudos/HTML_CSS/desafios/desafio_12/---.html)
+  > Cordel moderno.
 
 <br><br>
 
