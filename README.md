@@ -1,4 +1,6 @@
 # Material de estudos
+<a href="https://augusto404.github.io/estudos"><img src="https://img.shields.io/website-up-down-green-red/http/monip.org.svg"></a>
+
 ## Sobre
 Este repositório será usado para armazenar meus materiais de exercícios e anotações de estudo relacionados a programação. O curso que estou focado atualmente é o de HTML e CSS do [CursoemVideo](https://www.youtube.com/CursoemV%C3%ADdeo).
 
