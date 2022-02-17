@@ -30,6 +30,45 @@ Para mover verticalmente e horizontalmente um elemento de maneira simultânea, u
 
 > A alternativa mais prática é a utilização de flexboxes.
 
+## Tabelas
+No HTML4 os sites eram construídos usando tabelas, a partir do HTML5 foram adicionadas ferramentas de contrução de sites mais eficiêntes e semânticas. **Não crie a estrutura dos seus sites com tabelas. Use elas apenas para o seu propósito, exibição de dados.**
+
+### Estilização de tabelas
+- **Bordas**: As bordas podem ser apenas externas quando usados os seletores CSS na tag table. Se quiser bordas internas e externas, use os seletor na tag td.
+- `border-collapse: collapse;` = Junta as linhas internas da tabela.
+- **Alinhamento**: Há dois tipos de alinhamentos, `text-align:;` para alinhamento horizontal e `vertical-align: middle;` para alinhamento vertical. Os dois ajudam a centralizar o conteúdo das células da tabela.
+
+### Hierarquia simples
+```css
+<table> /* tabela */
+    <tr> /* (table row) = linha de tabela */
+        <th> /* (table header) = título de tabela */
+        <td> /* (table data) = dado de tabela */
+```
+
+### Hierarquia avançada (Para tabelas grandes)
+A anatomia de tabelas grandes se baseia em tags semânticas.
+
+```css
+<table>
+    <caption> /* legenda da tabela */
+    <thead> /* (table head) cabeçalho da tabela */
+        <tr>
+            <th>
+            <td>
+    <tbody> /* (table body) corpo da tabela */
+        <tr>
+            <th>
+            <td>
+    <tfoot> /* (table footer) rodapé da tabela */
+        <tr>
+            <th>
+            <td>
+```
+
+### Escopo
+[Caption e Escopo de títulos em tabelas](https://youtu.be/ZnjU3PzhGi0)
+
 ---
 # Anotações extras
 ## Atalhos
