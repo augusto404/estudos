@@ -35,7 +35,16 @@
         thead > tr > th:nth-child(2) {
             width: 50px;
         }
-    </style>
+
+        /* É aconselhável utilizar esse efeito apenas no tbody, para que não haja interferência na formatação título e nem do footer. */
+        tbody > tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>

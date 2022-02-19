@@ -33,11 +33,6 @@ Para mover verticalmente e horizontalmente um elemento de maneira simultânea, u
 ## Tabelas
 No HTML4 os sites eram construídos usando tabelas, a partir do HTML5 foram adicionadas ferramentas de contrução de sites mais eficiêntes e semânticas. **Não crie a estrutura dos seus sites com tabelas. Use elas apenas para o seu propósito, exibição de dados.**
 
-### Estilização de tabelas
-- **Bordas**: As bordas podem ser apenas externas quando usados os seletores CSS na tag table. Se quiser bordas internas e externas, use os seletor na tag td.
-- `border-collapse: collapse;` = Junta as linhas internas da tabela.
-- **Alinhamento**: Há dois tipos de alinhamentos, `text-align:;` para alinhamento horizontal e `vertical-align: middle;` para alinhamento vertical. Os dois ajudam a centralizar o conteúdo das células da tabela.
-
 ### Hierarquia simples
 ```css
 <table> /* tabela */
@@ -66,8 +61,31 @@ A anatomia de tabelas grandes se baseia em tags semânticas.
             <td>
 ```
 
+### Estilização de tabelas
+- **Bordas**: As bordas podem ser apenas externas quando usados os seletores CSS na tag table. Se quiser bordas internas e externas, use os seletor na tag td.
+- `border-collapse: collapse;` = Junta as linhas internas da tabela.
+- **Alinhamento**: Há dois tipos de alinhamentos, `text-align:;` para alinhamento horizontal e `vertical-align: middle;` para alinhamento vertical. Os dois ajudam a centralizar o conteúdo das células da tabela.
+- **Efeito zebrado**: Para adicionar o efeito de linhas de cores alternadas, use a _pseudo-classe_ `:nth-child(2n)`.
+    > Essa _pseudo-classe_ seleciona tags especificadas de forma repetitiva, ou pode ser usada para aplicar um estilo em uma tag de um conjunto sem precisar do uso de classes.
+
+    > Também pode ser usado a especificação `odd` para selecionar números impáres, ou `even` para números pares, por exemplo. Recomendo ver a documentação com os exemplos de utilização dessa _pseudo-classe_.
+
+    - Intercalando cores:
+        ```css
+        tbody > tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+        ```
+
 ### Escopo
 [Caption e Escopo de títulos em tabelas](https://youtu.be/ZnjU3PzhGi0)
+
+
+
 
 ---
 # Anotações extras
