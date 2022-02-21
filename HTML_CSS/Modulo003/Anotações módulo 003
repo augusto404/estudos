@@ -103,10 +103,9 @@ A anatomia de tabelas grandes se baseia em tags semânticas.
     > Para fazer a **expansão de células por coluna** use `rowspan`.
 
 ### Escopo
-[Caption e Escopo de títulos em tabelas](https://youtu.be/ZnjU3PzhGi0)
+O escopo ajuda o HTML entender a distribuição de dados de forma semântica na sua tabela. Para definir os escopos de uma tabela, use `scope=""` na tag `<th>`, indicando em que direção estão dispostos os dados. **Os tipos básicos são `scope="col"` e `scope="row"`.**
 
-
-
+Quando há uma célula mesclada em colunas e linhas, ela abrange um grupo de colunas ou linhas. Nesse caso, a definição é feita como a de um grupo. Para a definição do escopo de grupos de colunas ou linhas, utiliza-se `scope="colgroup"` ou `scope="rowgroup"` na tag `<th>`.
 
 ---
 # Anotações extras
