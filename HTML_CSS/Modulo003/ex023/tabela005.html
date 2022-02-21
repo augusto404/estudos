@@ -27,8 +27,16 @@
             padding: 8px;
         }
 
-        tr.destaque {
+        .destaque {
             background-color: chartreuse;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.csexo {
+            background-color: yellow;
         }
     </style>
 </head>
@@ -36,6 +44,12 @@
     <h1>Exercício de Tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -56,7 +70,7 @@
             <td>Programador</td>
         </tr>
         <tr>
-            <td class="destaque">Gustavo</td>
+            <td>Gustavo</td>
             <td>M</td>
             <td>42</td>
             <td>Professor</td>
@@ -67,7 +81,7 @@
             <td>19</td>
             <td>Vendedor</td>
         </tr>
-        <tr class="destaque">
+        <tr>
             <td>Maria</td>
             <td>F</td>
             <td>39</td>
