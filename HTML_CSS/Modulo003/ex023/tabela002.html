@@ -13,6 +13,7 @@
 
         table {
             width: 500px;
+            position: relative;
         }
 
         caption {
@@ -31,17 +32,28 @@
             text-align: right;
         }
 
+        thead, tfoot {
+            background-color: darkslategray;
+            color: white;
+        }
+        
         /* Optei por usar a especificidade sem precisar adicionar estilos diretamnete na tag como o porfessor fez. */
         thead > tr > th:nth-child(2) {
             width: 50px;
         }
+        
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: darkslategray;
+        }
 
         /* É aconselhável utilizar esse efeito apenas no tbody, para que não haja interferência na formatação título e nem do footer. */
-        tbody > tr:nth-child(odd) {
+        tbody > tr:nth-child(odd) { /* 2n-1 */
             background-color: lightblue;
         }
 
-        tbody > tr:nth-child(even) {
+        tbody > tr:nth-child(even) { /* 2n */
             background-color: lightgray;
         }
         </style>
