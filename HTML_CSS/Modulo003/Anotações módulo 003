@@ -66,6 +66,8 @@ A anatomia de tabelas grandes se baseia em tags semânticas.
 - `border-collapse: collapse;` = Junta as linhas internas da tabela.
 - **Alinhamento**: Há dois tipos de alinhamentos, `text-align:;` para alinhamento horizontal e `vertical-align: middle;` para alinhamento vertical. Os dois ajudam a centralizar o conteúdo das células da tabela.
 - **Efeito zebrado**: Para adicionar o efeito de linhas de cores alternadas, use a _pseudo-classe_ `:nth-child(2n)`.
+    > O efeito zebrado é aconselhado para tabelas que contém muitas colunas.
+    
     > Essa _pseudo-classe_ seleciona tags especificadas de forma repetitiva, ou pode ser usada para aplicar um estilo em uma tag de um conjunto sem precisar do uso de classes.
 
     > Também pode ser usado a especificação `odd` para selecionar números impáres, ou `even` para números pares, por exemplo. Recomendo ver a documentação com os exemplos de utilização dessa _pseudo-classe_.
@@ -80,6 +82,25 @@ A anatomia de tabelas grandes se baseia em tags semânticas.
             background-color: lightgray;
         }
         ```
+- **Cabeçalho fixo**: Defina o posicionamento da tabela para relativo, crie um seletor para o cabeçalho e defina os seguintes parâmetros:
+    ```css
+        /* Definindo o caminho do cabeçalho. */
+        thead > tr > th { 
+            
+            /* Fixando o cabeçalho. */
+            position: sticky;
+
+            /* O navegador pode apresentar uma margem de um pixel de distância do topo se for definido o valor zero, então é aconselhavel utilizar o valor de um pixel negativo. */
+            top: -1px;
+
+            /* Use a mesma cor do background do cabeçalho. */
+            background-color: darkslategray;
+        }
+    ```
+- **Mesclagem de células**: A mesclagem de células acontece por expansão de colunas. Use a propriedade ´colspan="NUMERO"´ dentro da tag `<td>` com a quantidade de células que queira mesclar. Ex: `<td colspan="2">dado</td>`.
+    > Isso não é CSS, esse é uma característica interna de tabelas.
+    
+    > Para fazer a **expansão de células por coluna** use `rowspan`.
 
 ### Escopo
 [Caption e Escopo de títulos em tabelas](https://youtu.be/ZnjU3PzhGi0)
