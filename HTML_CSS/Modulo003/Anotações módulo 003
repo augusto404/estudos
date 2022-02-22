@@ -101,13 +101,24 @@ A anatomia de tabelas grandes se baseia em tags semânticas.
     > Isso não é CSS, esse é uma característica interna de tabelas.
     
     > Para fazer a **expansão de células por coluna** use `rowspan`.
+- **Agrupamento de colunas**: Para selecionar uma coluna inteira numa tabela, use a tag `<colgroup>`. Crie a tag no começo da tabela, insira uma quantidade de `<col>` dentro da `<colgroup>` referente a quantidade de colunas na sua tabela, por fim, coloque classes/IDs diferentes em cada `<col>`. Para fazer a estilização das colunas, use um seletor marcando as classes que foram criadas.
+    - **`span` dentro da `<col>`**: Ao usar `<col class="test" span="2">`, por exemplo, significa que a formatação que for aplicada nessa coluna sera aplicada na quantidade de colunas próximas, isso é definido pelo número em `span`.
 
 ### Escopo
 O escopo ajuda o HTML entender a distribuição de dados de forma semântica na sua tabela. Para definir os escopos de uma tabela, use `scope=""` na tag `<th>`, indicando em que direção estão dispostos os dados. **Os tipos básicos são `scope="col"` e `scope="row"`.**
 
 Quando há uma célula mesclada em colunas e linhas, ela abrange um grupo de colunas ou linhas. Nesse caso, a definição é feita como a de um grupo. Para a definição do escopo de grupos de colunas ou linhas, utiliza-se `scope="colgroup"` ou `scope="rowgroup"` na tag `<th>`.
 
----
+### Tabelas Responsivas
+Para criar uma tabela responsiva de forma simples, siga os seguintes passos:
+
+1. Envelope a tabela em uma `<div id="container">`
+2. Use o seletor CSS para definir o parametro `overflow-x: auto;`
+
+Isso irá definir a div como um espaço separado, onde a tabela terá uma barra de rolagem. Dessa forma, a tabela não ficará vazada do resto do site.
+
+<br><br><br>
+
 # Anotações extras
 ## Atalhos
 - `div.quadrado*3` = Cria três `divs` com a classe "quadrado".
