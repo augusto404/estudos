@@ -11,7 +11,10 @@
 ## ECMA
 As versões do ECMA mais recentes podem não ser compatíveis com todos os navegadores. A versão que será estudada nesse curso é a 6. Nem sempre a versão mais recente significará que as antigas são inúteis, as versões atuais trazem novidades e as antigas contém estabilidade.
 
-## Alertas e prompts
+## Node.js
+O Node.js serve para criar e executar aplicações javascript sem a necessidade de um browser.
+
+## Janelas
 A parte `window.` pode ser omitida, se quiser.
 
 - `alert` = alerta apenas com a opção de confirmação
@@ -21,7 +24,7 @@ A parte `window.` pode ser omitida, se quiser.
 O script é executado em sequencia, ou seja, o que está em cima vem primeiro. A ordem dos comandos altera o resultado final.
 
 # Módulo B
-
+## 
 
 <br><br><br>
 # Anotações extras
