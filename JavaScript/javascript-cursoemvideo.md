@@ -1,6 +1,7 @@
 - [Curso](https://youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1)
 - [MDN Web Docs](https://developer.mozilla.org)
 - [ECMA](https://www.ecma-international.org/)
+<br><br>
 
 # Módulo A
 ## Funcionalidades
@@ -130,6 +131,57 @@ Também pode ser feita a conversão pelo final da linha: `n.toString()`
     - Para trocar o ponto por vírgula, concatene a função de substituição `var.toFixed(2).replace('.', ',')`.
 - Na especificação de valores monetários, usar `var.toLocalString('pt-BR', {style: 'currency', currency: 'BRL'})`. Isso irá deixar os valores na moeda brasileira.
     > Não precisa usar o replace nesse caso.
+
+## Operadores
+De modo geral, os operadores básicos matemáticos são utilizáveis de forma normal em JS, as excessões são:
+- Para o sinal de `*` que serve para divisão
+- `%` é usado para o resto da divisão inteira
+    > A `/` é usada normalmente para divisão com números reais
+- `**` é usado para potênciação
+
+### Precendência de Operadores
+Os operadores seguem uma ordem de resolução específica que não séra alterada, independente da posição dos mesmos em uma conta. **Essa ordem se aplica a qualquer linguagem de programação.**
+- Ordem:
+    - `()`
+    - `**`
+    - `*` | `/` | `%`
+        > Se aparecem mais de um desse na mesma conta, a ordem de resolção é da **esquerda** para **direita**.
+    - `+` | `-`
+- Fazendo média entre valores:
+    ```
+    5 + 3 / 2 = 6.5
+    ```
+    > A prioridade será a divisão.
+
+    Use módulo para priorizar a soma e fazer a média entre valores.
+
+    ```
+    (5 + 3) / 2 = 4
+    ```
+- Auto atribuição é quando a variável recebe um valor novo, atualizando o antigo.
+    ```js
+        var n = 3
+        n = n + 4 // Auto atribuição
+        // Somando um valor com a auto atribuição
+        // n vale 7, agora.
+    ```
+    - Para simplificar a auto atribuição, use `n+=4`, por exemplo. Omitir a variável que **seria repetida** na soma é permitido.
+        > Isso serve para os outros operadores: `n-=5`, `n*=4`, `n/=2`, `n**=2`, `n%=5`.
+        
+        > A maioria das linguagens aceitam esse tipo de *sintaxe*.
+        - Uma segunda maneira de simplificação de auto atribuição é usando os **pós incrementos** `var++` ou `var--`.
+            - Isso incrementa o valor **1** á variável.
+            - Em algumas linguagens pode ser feita o **pré incremento**: `++var` ou `--var`.
+
+### Operadores Relacionais
+Os operadores relacionais fazem comparação entre dois elementos, possibilitando que haja uma ação dependendo do que seja o resultado da comparação.
+- Os operadores:
+    - `>` = Maior que
+    - `<` = Menor que
+    - `>=` = Maior ou igual
+    - `<=` = Menor ou igual
+    - `==` = Igual a
+    - `!=` = Diferente de
 
 <br><br><br>
 # Anotações extras
