@@ -141,13 +141,18 @@ De modo geral, os operadores básicos matemáticos são utilizáveis de forma no
 
 ### Precendência de Operadores
 Os operadores seguem uma ordem de resolução específica que não séra alterada, independente da posição dos mesmos em uma conta. **Essa ordem se aplica a qualquer linguagem de programação.**
-- Ordem:
+
+A ordem geral de precedência de operadores é: **aritméticos -> relacionais -> lógicos**.
+
+### Operadores Aritméticos
+- Ordem de precedência:
+    > Se aparecem mais de um deles na mesma conta, a ordem de resolção é da **esquerda** para **direita**.
     - `()`
     - `**`
     - `*` | `/` | `%`
-        > Se aparecem mais de um desse na mesma conta, a ordem de resolção é da **esquerda** para **direita**.
     - `+` | `-`
-- Fazendo média entre valores:
+
+#### Fazendo média entre valores:
     ```
     5 + 3 / 2 = 6.5
     ```
@@ -158,23 +163,30 @@ Os operadores seguem uma ordem de resolução específica que não séra alterad
     ```
     (5 + 3) / 2 = 4
     ```
-- Auto atribuição é quando a variável recebe um valor novo, atualizando o antigo.
-    ```js
-        var n = 3
-        n = n + 4 // Auto atribuição
-        // Somando um valor com a auto atribuição
-        // n vale 7, agora.
-    ```
-    - Para simplificar a auto atribuição, use `n+=4`, por exemplo. Omitir a variável que **seria repetida** na soma é permitido.
-        > Isso serve para os outros operadores: `n-=5`, `n*=4`, `n/=2`, `n**=2`, `n%=5`.
-        
-        > A maioria das linguagens aceitam esse tipo de *sintaxe*.
-        - Uma segunda maneira de simplificação de auto atribuição é usando os **pós incrementos** `var++` ou `var--`.
-            - Isso incrementa o valor **1** á variável.
-            - Em algumas linguagens pode ser feita o **pré incremento**: `++var` ou `--var`.
+
+#### Auto Atribuição
+Auto atribuição é quando a variável recebe um valor novo, atualizando o antigo.
+
+```js
+    var n = 3
+    n = n + 4 // Auto atribuição
+    // Somando um valor com a auto atribuição
+    // n vale 7, agora.
+```
+
+- Para simplificar a auto atribuição, use `n+=4`, por exemplo. Omitir a variável que **seria repetida** na soma é permitido.
+    > Isso serve para os outros operadores: `n-=5`, `n*=4`, `n/=2`, `n**=2`, `n%=5`.
+    
+    > A maioria das linguagens aceitam esse tipo de *sintaxe*.
+    - Uma segunda maneira de simplificação de auto atribuição é usando os **pós incrementos** `var++` ou `var--`.
+        - Isso incrementa o valor **1** á variável.
+        - Em algumas linguagens pode ser feita o **pré incremento**: `++var` ou `--var`.
 
 ### Operadores Relacionais
 Os operadores relacionais fazem comparação entre dois elementos, possibilitando que haja uma ação dependendo do que seja o resultado da comparação.
+
+Os operadores relacionais **não** tem ordem de precedência, apenas devem ser resolvidos da **esquerda para a direita**.
+
 - Os operadores:
     - `>` = Maior que
     - `<` = Menor que
@@ -182,6 +194,112 @@ Os operadores relacionais fazem comparação entre dois elementos, possibilitand
     - `<=` = Menor ou igual
     - `==` = Igual a
     - `!=` = Diferente de
+
+- Os operadores relacionais podem ser usados na comparação de `strings` e `variáveis`.
+    - As comparações **não consideram os tipos**, por exemplo:
+        ```js
+        5 == '5' -> true
+        ```
+        > Eles tem o mesmo valor, mas são de tipos diferentes.
+    - Para a comparação **considerando os tipos**, use o `===` ou `!==` (comparador de identidade).
+        ```js
+        5 === 5 -> true
+        ```
+        > Eles tem o mesmo valor e mesmo tipo. São idênticos.
+
+### Operadores Lógicos
+- Os operadores lógicos são:
+    > A listagem está na **ordem de resolução** dos operadores.
+    - `!` = negação
+        - Especificação do que **não quero**
+        - Operador *unário*
+    - `&&` = conjunção
+        - Quero as **duas coisas** especificadas, **sem excessão**.
+            > As repostas devem ser `true` e `true`.
+        - Operador *binário* (true / false)
+    - `||` = disjunção
+        - Três opções, **ou uma, ou outra, mas também podem ser as duas juntas**.
+            > Se as respostas forem `true` e `false`, `false` e `true`, ou `true` e `true`, serão aceitas. Só um `true` já é o suficiente.
+
+### Operadores Ternários
+Esses operadores constituem uma sequência de três passos, sendo eles: **teste** `?` **true** `:` **false**.
+> Ou seja: variável recebe um valor, se for verdadeiro, faça a opção 01, senão, opção 02.
+
+```js
+    var idade = 18
+    var resposta = idade >= 18 ? 'MAIOR' : 'MENOR'
+    // O resultado será 'MAIOR'
+```
+
+# Módulo C
+## Extensões
+- watch chrome
+    > Use a extensão [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), ela é mais simples de manusear. Ao criar um documento, clique com o botão direito em cima dele (na parte das pastas) e selecione a opção de abrir com Live Server.
+- node exec
+
+## DOM - Document Object Model
+
+O DOM é um modelo de estrutura de documento que fica dentro dos navegadores, ele dita em forma de árvore onde está posicionado cada elemento que constitui uma página web. Ele não funciona no Node.JS, apenas no navegador.
+
+### Árvore DOM
+A árvore DOM é constituída em objetos que podem ser representados em formato cascata, eles são colocados um dentro do outro, o objeto raíz de todos é o `window`.
+
+```md
+- window
+    - location
+    - document
+        - html
+            - head
+                - meta
+                - title
+            - body
+                - h1
+                - p
+                    - strong
+                - div
+    - history
+```
+- Qualquer coisa na árvore é um elemento
+- Quando um elemento contém outro dentro de sí, ele se chama `parent`.
+    > `html` é `parent` de `head` e `body`.
+- Já quando um elemento é contido por outro, ele se chama `child`.
+    > `body` é `child` de `html`.
+
+Quando é digitado `window.` no JS, está sendo usada a estrutura de DOM, por exemplo. Os comandos são uma **navegação dentro dos elementos** no DOM, da mesma forma que é **percorrido um caminho** no gerênciador de arquivos para achar um documento.
+
+```js
+    window.document.write(window.document.URL)
+    // Mostrando a URL do site no documento HTML.
+```
+
+### Selecionando Elementos
+Para selecionar elementos, o funcionamento é semelhante aos seletores em CSS.
+
+O elemento `window` que é colocado inicialmente pode ser omitido.
+
+- **Marca**: O elemento é selecionado pela sua tag HTML.
+    - Quando um comando do tipo `getElement` estiver no plural, é definido o posicionamento do elemento no HTML:
+        ```js
+            getElementsByTagName('p')[n]
+        ```
+        > O número que é colocado dentro dos parênteses inicia em zero e é referente a qual tag que será selecionada se o documento tiver mais de uma.
+
+    - `innerText` pega o conteúdo sem formatação, `innerHTML` pega o conteúdo com a formatação.
+- **ID**: Use `id=""` na tag e selecione ele no script com `getElementById('nome_da_id')`.
+    > IDs são únicos, não podem ser repetidos em outras tags.
+- **Nome**: `getElementsByName()[n]`.
+- **Classe**: Mesma forma que o ID, usando `class=""` no lugar.
+    > As mesma classe podem ser utilizada várias vezes em diferentes tags.
+- **Seletor**: Usando essa forma, o espaço de seleção fica disponível para o uso de seletores CSS.
+    
+    ```js
+        var seletor = window.document.querySelector('div#nome_da_id')
+        // O mesmo comando serve para classes, é só mudar a # por ponto.
+
+        seletor.style.color = 'green' // Alterando a cor do elemento
+    ```
+
+    > Esse método não é compatível com navegadores antigos.
 
 <br><br><br>
 # Anotações extras
