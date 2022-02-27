@@ -301,6 +301,46 @@ O elemento `window` que é colocado inicialmente pode ser omitido.
 
     > Esse método não é compatível com navegadores antigos.
 
+### Eventos DOM
+Os eventos acontecem dependendo do gatilho externo que algum elemento de sua página recebe: passar o mouse em cima de um quadrado, por exemplo.
+
+#### Tipos de Eventos
+- `mouseenter` = Ao passar o mouse
+- `mousemove` = Ao mover continuamente o mouse sobre o elemento
+- `mouseout` = Ao mover o mouse para fora do elemento
+- `mousedown` = Clicar e segurar
+- `mouseup` = Após clicar e segurar, soltar
+- `click` = Clique rápido sobre o elemento
+
+> Ha mais eventos no [site da MDN](https://developer.mozilla.org/pt-BR/docs/Web/Events).
+
+#### Funções
+As funções são um bloco de inatruções que só iniciam quando há um gatilho, sendo esse gatilho os eventos DOM. A criação de uma função terá os seguintes passos:
+1. Criar um bloco `function`
+2. Definir nome da função
+    - As **funções amônimas** são as que não tem nome
+3. A definição de parâmetros é opcional
+
+```js
+    function ação(parametros) {
+        
+        }
+```
+Os eventos podem ser configurados de duas formas: Pelo JS ou por HTML.
+
+1. Digite `on` dentro da tag e espere o auto completar sugerir as opções
+2. Escolha o tipo de evento que deseja
+3. Dentro das aspas, defina o nome da **ação** que será colocada na `function`
+
+```js
+    function ação() {
+        var nome_do_id = document.getElementByID('id_da_tag')
+        // Além da ação ser definida, deve ser definido pelo id da tag, também.
+    } 
+```
+
+
+
 <br><br><br>
 # Anotações extras
 - Estudar frameworks apenas após entender bem os conceitos básicos de JavaScript.
