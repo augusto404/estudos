@@ -359,7 +359,7 @@ Essa função serve para evitar a poluição de código nas tags HTML. No lugar 
 As estruturas condicionais trabalham com **se** e **senão** (if or else) para executar ações dependendo de qual o resultado dado por alguma influência exterior no código.
 
 ```js
-    if {
+    if (condição) {
         // Valor true
     } else {
         // Valor false
@@ -368,9 +368,9 @@ As estruturas condicionais trabalham com **se** e **senão** (if or else) para e
 > Quando uma estrutura tem apenas o `if`, ela se chama condição simples.
 
 
-
 <br><br><br>
 # Anotações extras
 - Estudar frameworks apenas após entender bem os conceitos básicos de JavaScript.
 - Ao usar `node` no terminal do *vscode*, o *node.js* estará rodando internamente no editor. Para sair do terminal, use `.exit`.
 - Para detectar erros no código, use o console do Dev Tools em seu navegador.
+- Usar `+=` ajuda a concatenar conteúdos de variáveis que serão apresentados na tela.
