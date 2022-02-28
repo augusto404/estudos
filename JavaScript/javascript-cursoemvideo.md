@@ -316,6 +316,7 @@ Os eventos acontecem dependendo do gatilho externo que algum elemento de sua pá
 
 #### Funções
 As funções são um bloco de inatruções que só iniciam quando há um gatilho, sendo esse gatilho os eventos DOM. A criação de uma função terá os seguintes passos:
+
 1. Criar um bloco `function`
 2. Definir nome da função
     - As **funções amônimas** são as que não tem nome
@@ -326,8 +327,9 @@ As funções são um bloco de inatruções que só iniciam quando há um gatilho
         
         }
 ```
-Os eventos podem ser configurados de duas formas: Pelo JS ou por HTML.
+**Os eventos podem ser configurados de duas formas: Pelo JS ou por HTML.**
 
+##### Pelo HTML - onclick, onmouseup, etc...
 1. Digite `on` dentro da tag e espere o auto completar sugerir as opções
 2. Escolha o tipo de evento que deseja
 3. Dentro das aspas, defina o nome da **ação** que será colocada na `function`
@@ -339,9 +341,36 @@ Os eventos podem ser configurados de duas formas: Pelo JS ou por HTML.
     } 
 ```
 
+##### Pelo JS - Event Listener
+Essa função serve para evitar a poluição de código nas tags HTML. No lugar de colocar as ações diretamente na tag, podem ser colocadas no script `var.addEventListener('nome_do_evento', nome_da_função)`. A identificação acontece pela variável pegar o elemento pela id, e os Events Listeners são direcionados á variável.
+
+```js
+    var test = document.getElementById('id') // Variável marcando a tag pelo ID
+    var.addEventListener('evento', função) // Event Listener localizando a variável que localiza o ID
+
+    function função() { // Função localizando o Event Listener
+
+    }
+```
+> Não precisa colocar o `on` antes do nome do evento, como no HTML.
+
+# Módulo D
+## Condições
+As estruturas condicionais trabalham com **se** e **senão** (if or else) para executar ações dependendo de qual o resultado dado por alguma influência exterior no código.
+
+```js
+    if {
+        // Valor true
+    } else {
+        // Valor false
+    }
+```
+> Quando uma estrutura tem apenas o `if`, ela se chama condição simples.
+
 
 
 <br><br><br>
 # Anotações extras
 - Estudar frameworks apenas após entender bem os conceitos básicos de JavaScript.
 - Ao usar `node` no terminal do *vscode*, o *node.js* estará rodando internamente no editor. Para sair do terminal, use `.exit`.
+- Para detectar erros no código, use o console do Dev Tools em seu navegador.
