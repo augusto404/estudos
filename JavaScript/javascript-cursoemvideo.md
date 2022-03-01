@@ -367,6 +367,51 @@ As estruturas condicionais trabalham com **se** e **senão** (if or else) para e
 ```
 > Quando uma estrutura tem apenas o `if`, ela se chama condição simples.
 
+## Condições Aninhadas
+As condições aninhadas são estruturas dentro de outras estruturas.
+
+```js
+    if () {
+
+    } else {
+        if () {
+
+        }
+    }
+```
+
+Maneira resumida:
+
+```js
+    if () {
+
+    } else if () {
+
+        } else {
+
+        }
+    }
+```
+
+## Condição Múltipla
+Esse tipo de condição é útil para casos específicos. Ela testa diferentes casos e, por último, vai para a opção padrão (essa alternativa é opcional).
+
+```js
+    switch () {
+        case valor01:
+        
+            break // O comando break é obrigatório.
+        case valor02:
+            
+            break
+        case valor03:
+            
+            break
+        default:
+
+            break
+    }
+```
 
 <br><br><br>
 # Anotações extras
@@ -374,3 +419,7 @@ As estruturas condicionais trabalham com **se** e **senão** (if or else) para e
 - Ao usar `node` no terminal do *vscode*, o *node.js* estará rodando internamente no editor. Para sair do terminal, use `.exit`.
 - Para detectar erros no código, use o console do Dev Tools em seu navegador.
 - Usar `+=` ajuda a concatenar conteúdos de variáveis que serão apresentados na tela.
+- Lembrar de converter para LowerCase ou UpperCase os dados de uma variável de texto, isso evita que o texto que foi alocado na var seja incompatível por estar em maiúscula ou minúscula.
+- Em node.js usamos `console.log` para apresentar informações na tela.
+- Os dias da semana em JS são contados iniciando do `0`.
+- 
