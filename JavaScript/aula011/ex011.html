@@ -68,18 +68,30 @@
             color: white;
             transition-duration: 0.3s;
         }
+
+        strong {
+            background-color: blueviolet;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        strong:hover {
+            transition: 1s;
+            background-color: rgba(255, 255, 0, 0.555);
+            color: black;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Identificador de Nacionalidades</h1>
-        <p>Digite seu país de origem e descubra se você é estrangeiro ou brasileiro.</p>
+        <p>Digite seu país de origem na caixa de texto e descubra se você é estrangeiro ou brasileiro.</p>
     </header>
     <main>
         <div>
-            <input type="text" name="pais" id="pais">
+            <input type="text" value="Digite aqui..." name="pais" id="pais">
             <input type="button" value="Checar" id="checar" onclick="check()">
-            <div id="resultado">Clique no botão e a resposta aparecerá aqui.</div>
+            <div id="resultado">Clique no botão <strong>Checar</strong> e a resposta aparecerá aqui.</div>
         </div>
     </main>
 
@@ -89,7 +101,7 @@
             var result = document.querySelector('div#resultado')
 
             if (textopais == 'brasil') {
-                result.innerHTML = `<p>Você é brasileiro!</p>`
+                result.innerHTML = `<p>Você <strong>é brasileiro!</strong></p>`
             } else {
                 result.innerHTML = `<p>Você <strong>não é</strong> brasileiro!</p>`
             }
