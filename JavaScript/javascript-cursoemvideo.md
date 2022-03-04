@@ -413,6 +413,21 @@ Esse tipo de condição é útil para casos específicos. Ela testa diferentes c
     }
 ```
 
+## Interatividade Com o Sistema
+Há funções que extraem dados do sistema, elas podem ser usadas para contruir coisas interativas. Alguns comandos são:
+
+```js
+    // Data
+    var variável001 = new Date() 
+    var variável002 = variável001.getDay()
+
+    // Hora
+    var var001 = new Date()
+    var var002 = var001.getHours()
+```
+
+> Os dados são contados a partir do número zero.
+
 <br><br><br>
 # Anotações extras
 - Estudar frameworks apenas após entender bem os conceitos básicos de JavaScript.
@@ -421,5 +436,3 @@ Esse tipo de condição é útil para casos específicos. Ela testa diferentes c
 - Usar `+=` ajuda a concatenar conteúdos de variáveis que serão apresentados na tela.
 - Lembrar de converter para LowerCase ou UpperCase os dados de uma variável de texto, isso evita que o texto que foi alocado na var seja incompatível por estar em maiúscula ou minúscula.
 - Em node.js usamos `console.log` para apresentar informações na tela.
-- Os dias da semana em JS são contados iniciando do `0`.
-- 
