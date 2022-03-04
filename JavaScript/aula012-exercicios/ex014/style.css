@@ -1,0 +1,47 @@
+body {
+    background: rgb(122, 122, 255);
+    font: normal 15pt Arial;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    border-radius: 10px;
+    width: 500px;
+    margin: auto;
+
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+section > div > img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+div {
+    padding: 8px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
