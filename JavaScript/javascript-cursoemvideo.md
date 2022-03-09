@@ -432,22 +432,56 @@ Há funções que extraem dados do sistema, elas podem ser usadas para contruir 
 
 > Os dados são contados a partir do número zero.
 
+# Módulo E
+## Estruturas de Repetição
+As estruturas de repetição se baseiam em ações a serem executadas repetidas vezes, enquanto o resultado for validado, se o resultado der um valor diferente, a repetição acaba.
+
+## Repetições Com Teste No Início
+```js
+    while (condição) { // Enquanto.
+
+    }
+```
+
+## Repetições Com Teste No Final
+```js
+    do {
+
+    } while (condição)
+```
+
+## Repetições Com Controle
+Nessa estrutura, além do teste lógico que é feito após a repetição, haverá um incremento.
+
+```js
+    for (início; teste; incremento) {
+
+    }
+```
+
 <br><br><br>
+
 # Anotações extras
 - Estudar frameworks apenas após entender bem os conceitos básicos de JavaScript.
-- Ao usar `node` no terminal do *vscode*, o *node.js* estará rodando internamente no editor. Para sair do terminal, use `.exit`.
 - Para detectar erros no código, use o console do Dev Tools em seu navegador.
 - Usar `+=` ajuda a concatenar conteúdos de variáveis que serão apresentados na tela.
 - Lembrar de converter para LowerCase ou UpperCase os dados de uma variável de texto, isso evita que o texto que foi alocado na var seja incompatível por estar em maiúscula ou minúscula.
-- Em node.js usamos `console.log` para apresentar informações na tela.
-- Input:
-    - Para bolinhas seletoras, use o tipo `radio`
-        - Nesse tipo de input, deve ser definido um label:
-            ```html
-                <input type="radio" name="" id="id-botao" checked>
-                <!-- Use checked em uma das opções para manter a seleção obrigatória. -->
-                <label for="id-botao"></label>
-                <!-- Para definir um label, o input tem que ter um id. -->
-            ```
-    - Para botões, `button`
+
+## Input
+- Para bolinhas seletoras, use o tipo `radio`
+    - Nesse tipo de input, deve ser definido um label:
+        ```html
+            <input type="radio" name="" id="id-botao" checked>
+            <!-- Use checked em uma das opções para manter a seleção obrigatória. -->
+            <label for="id-botao"></label>
+            <!-- Para definir um label, o input tem que ter um id. -->
+        ```
+- Para botões, `button`
+
+## Depuração
 - Sempre testar o programa aos poucos, fazendo alerts para ver se os dados estão sendo tratados de forma correta
+- Debug: Para acompanhar o código sendo executado passo-a-passo, use o menu de debug na IDE.
+
+## Node
+- Ao usar `node` no terminal do *vscode*, o *node.js* estará rodando internamente no editor. Para sair do terminal, use `.exit`.
+- Em node.js usamos `console.log` para apresentar informações na tela.
