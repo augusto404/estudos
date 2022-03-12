@@ -5,6 +5,7 @@ body {
 
 header {
     color: white;
+    text-align: center;
 }
 
 section {
@@ -14,6 +15,23 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    text-decoration: none;
+    border: none;
+    padding: 10px;
+}
+
+output {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
 }
 
 footer {
