@@ -5,6 +5,7 @@ body {
 
 header {
     color: white;
+    text-align: center;
 }
 
 section {
@@ -14,6 +15,45 @@ section {
     width: 500px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+#container > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container > div > p, input {
+    margin: 10px;
+    padding: 5px;
+}
+
+input {
+    text-decoration: none;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+    color: white;
+    background-color: rgb(122, 122, 255);
+}
+
+input:hover {
+    background-color: rgb(255, 255, 107);
+    color: black;
+    transition: 0.3s;
+}
+
+#cont {
+    text-align: center;
+    margin: 20px;
+}
+
+#contar {
+    padding: 10px;
+}
+
+#result {
+    text-align: center;
+    margin: 30px;
 }
 
 footer {
