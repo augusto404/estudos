@@ -466,6 +466,7 @@ Nessa estrutura, além do teste lógico que é feito após a repetição, haver�
 - Para detectar erros no código, use o console do Dev Tools em seu navegador.
 - Usar `+=` ajuda a concatenar conteúdos de variáveis que serão apresentados na tela.
 - Lembrar de converter para LowerCase ou UpperCase os dados de uma variável de texto, isso evita que o texto que foi alocado na var seja incompatível por estar em maiúscula ou minúscula.
+- Os emojis em JS são colocados nas strings usando `\u{codigo}`.
 
 ## Input
 - Para bolinhas seletoras, use o tipo `radio`
