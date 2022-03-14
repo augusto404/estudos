@@ -1,0 +1,66 @@
+:root {
+    --background: rgb(37, 2, 70);
+    --main-color: rgba(240, 248, 255, 0.466);
+    --highlights: blueviolet;
+    --hover: rgba(255, 255, 0, 0.555);
+    --input: rgba(118, 187, 248, 0.795);
+}
+
+body {
+    background: var(--background);
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: white;
+}
+
+section {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.233);
+}
+
+input, select {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--input);
+}
+
+input:hover {
+    background-color: var(--hover);
+    color: white;
+    transition: 0.4s;
+}
+
+#flex01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+select {
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
+}
+
+#flex02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
