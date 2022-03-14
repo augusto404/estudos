@@ -1,17 +1,29 @@
 function tabuada() {
     // Possivel erro: mudar queryselector para getelementbyid
-    var inicio = Number(document.querySelector('input#inicio').value)
-    var fim = Number(document.querySelector('input#fim').value)
-    var passo = Number(document.querySelector('input#passo').value)
-    var res = document.querySelector('div#result')
+    var inicio = Number(document.getElementById('inicio').value)
+    var fim = Number(document.getElementById('fim').value)
+    var passo = Number(document.getElementById('passo').value)
+    var res = document.getElementById('result')
 
-    if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+    if (inicio.length == 0 || fim.length == 0 || passo.length == 0) {
         alert('ERRO! Faltam dados')
     } else {
-        res.innerHTML = 'Contando: '
+        res.innerHTML = `<strong>Contando:</strong> <br>`
 
-        for (var resultado = inicio; resultado <= fim; resultado += passo) {
-            res.innerHTML = 'Contando: &3xFE0F;' + resultado + '<br>'
+        if (passo <= 0) {
+            alert('Passo inválido. Considerando passo 1')
+            passo = 1
         }
+
+        if (inicio < fim) { // Contagem crescente
+            for (var resultado = inicio; resultado <= fim; resultado += passo) {
+                res.innerHTML += `${resultado}, \u{1F449} ` // Lembrar do +=, fiquei um bom tempo tentando pra perceber isso.
+            }
+        } else { // Contagem decrescente
+            for (var resultado = inicio; resultado >= fim; resultado-= passo) {
+                res.innerHTML += `${resultado} \u{1F449}`
+            }
+        }
+        res.innerHTML += ` \u{1F3C1}`
     }
 }
