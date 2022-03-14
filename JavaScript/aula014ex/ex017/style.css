@@ -25,13 +25,39 @@ section {
 input {
     text-decoration: none;
     border: none;
+    background-color: rgb(122, 122, 255);
+    color: white;
+    border-radius: 10px;
     padding: 10px;
+    margin: 10px;
 }
 
-output {
-    width: 100px;
-    height: 100px;
-    background-color: blue;
+input:hover {
+    background-color: rgb(223, 223, 0);
+    color: black;
+    transition: 0.5s
+}
+
+select {
+    overflow: hidden;
+    border: none;
+    width: 10rem;
+    height: 13.6rem;
+    background-color: rgb(122, 122, 255);
+}
+
+option {
+    text-align: center;
+    background-color: white;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+option:hover {
+    background-color: rgb(223, 223, 0);
+    color: black;
+    transition: 0.5s
 }
 
 footer {

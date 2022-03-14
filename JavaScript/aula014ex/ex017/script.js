@@ -1,10 +1,17 @@
 function tabuada() {
-    var numero = Number(document.querySelector('input#numero'))
-    var saida = document.querySelector('output#saida')
+    var numero = Number(document.querySelector('input#numero').value)
+    var saida = document.querySelector('select#saida')
 
-    var res = numero * cont
-
-    for (var cont = 1; cont <= 10; cont++) {
-        saida.innerHTML = numero + 'x' + cont + '=' + res
+    if (numero.length == 0) {
+        alert('Digite um número!')
+    } else {
+        saida.innerHTML = ''
+        for (var cont = 1; cont <= 10; cont++) {
+            // Definições do item que irá pro html.
+            var item = document.createElement('option')
+            item.text = `${numero} x ${cont} = ${numero*cont}`
+            item.value = 'saida${cont}'
+            saida.appendChild(item)
+        }
     }
 }
