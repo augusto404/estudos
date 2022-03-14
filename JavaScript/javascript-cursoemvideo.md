@@ -459,6 +459,82 @@ Nessa estrutura, além do teste lógico que é feito após a repetição, haver�
     }
 ```
 
+# Módulo F
+## Variáveis Compostas
+- Variáveis Simples: Armazenam um valor por vez.
+- Variáveis Compostas: Armazenam vários valores.
+    - Uma `array`(vetor) é representada com colchetes(`[]`):
+        ```js
+            var teste = [
+                item,
+                item,
+                'string'
+            ]
+        ```
+    - Cada **elemento** recebe um índice/chave(key)
+        > A contagem é iniciada do 0.
+
+
+- **Adicionar valores à uma `array`**
+    - **Forma específica:** Coloque um indicador para um índice que esteja vazio.
+    ```js
+        let teste = [4, 3, 7, 8]
+        
+        teste[4] = 9 // Adicione o valor 9 à posição 4 dentro da array.
+    ```
+    - **Forma geral:** O JavaScript irá adicionar o valor automáticamente no fim da lista de `elementos`.
+    ```js
+        let teste = [4, 3, 7, 8]
+
+        teste.push(9) // Coloque o número 7 no fim da lista de elementos dentro de teste.
+    ```
+- Para saber a **quantidade de elementos** dentro de uma array, use `var.length`
+    > Prestar atenção na escrita do atributo.
+- Para **organizar os elementos dentro da array**, usamos o método `var.sort()`. Isso organizará os valores numéricos de forma crescente.
+- **Estrutura de repetição numa array:** Pode ser usadas as estruturas de repetição na apresentação de dados dentro de uma `array`:
+    - **Forma mais complexa:**
+    ```js
+        var teste = [1, 2, 3]
+        for(let posicao = 0; posicao < teste.length; posicao++){
+            console.log(`Posição ${posicao}, valor ${teste[posicao]}.`) // Para apresentar o valor referente a posição, deve ser colocado a array[variável da posição]
+        }
+
+        // Criada a var teste
+        // Se a posição do elemento for menor que o comprimento da array, repita com a adição de mais um na posição
+        // Será colocada uma posição a frente em cada repetição, iniciando do 0 (posição do primeiro elemento)
+    ```
+
+    - **Forma mais simples:**
+    ```js
+        var teste = [1, 2, 3]
+        for(let posicao in teste){
+            console.log(teste[posicao])
+        }
+        // Para cada posição na array, mostre o número referente a posição.
+    ```
+        > Essa segunda alternativa funciona apenas para arrays e objetos.
+- **Buscando um valor dentro da array**: `var.indexOf(0)`. A função retorna a `key` do valor.
+
+## Uso de Funções e Eventos
+- Recursividade é quando uma função é chamada dentro de sí mesma.
+    ```js
+        function fatorial(n){
+        if (n == 1) {
+            return 1
+        } else {
+            return n * fatorial(n-1) // Irá ser resolvido primeiro a chamada do fatorial.
+        }
+    }
+    
+    console.log(fatorial(5))
+    ```
+    
+    > Nessa parte, o sistema executa primeiro as chamadas repetitivas e guarda os resultados, após isso ele irá executar a função como um todo, considerando os resultados obtidos anteriormente.
+
+## Passagem de Parâmetros
+
+
+
 <br><br><br>
 
 # Anotações extras
