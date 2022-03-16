@@ -9,7 +9,7 @@
 body {
     background: var(--background);
     font-size: 1em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
@@ -35,25 +35,23 @@ input, select {
     background-color: var(--input);
 }
 
-input:hover {
-    background-color: var(--hover);
-    color: white;
-    transition: 0.4s;
+div#flex > p {
+    font-weight: bold;
 }
 
-#flex01 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+input:hover, select:hover {
+    background-color: var(--hover);
+    color: white;
+    transition: 0.2s;
 }
 
 select {
     overflow: hidden;
-    width: 10rem;
+    width: 20rem;
     height: 10rem;
 }
 
-#flex02 {
+.flex {
     display: flex;
     flex-direction: column;
     align-items: center;
