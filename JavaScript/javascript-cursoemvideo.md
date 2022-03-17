@@ -531,7 +531,8 @@ Nessa estrutura, além do teste lógico que é feito após a repetição, haver�
     
     > Nessa parte, o sistema executa primeiro as chamadas repetitivas e guarda os resultados, após isso ele irá executar a função como um todo, considerando os resultados obtidos anteriormente.
 
-## Passagem de Parâmetros
+## Objetos
+Os objetos são como arrays, só que mais evoluídos. Eles permitem a personalização do índice e a adição de funções dentro de si.
 
 
 
