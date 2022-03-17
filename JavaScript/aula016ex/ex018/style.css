@@ -57,6 +57,18 @@ select {
     align-items: center;
 }
 
+strong {
+    background-color: var(--highlights);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+strong:hover {
+    color: black;
+    transition: 0.2s;
+    background-color: var(--hover)
+}
+
 footer {
     color: white;
     text-align: center;

@@ -13,12 +13,17 @@
     </header>
     <section>
         <div class="flex">
-            <p>Número (entre 0 e 100): <input type="number" name="numero" id="numero" placeholder="Digite um número"></p>
-            <input type="button" value="Adicionar" id="adicionar">
+            <p><strong>Número (entre 0 e 100):</strong>
+                <input type="number" name="numero" id="numero" placeholder="Digite um número">
+            </p>
+            <input type="button" value="Adicionar" onclick="adicionar()">
         </div>
         <div class="flex">
             <abbr title="O resultado aparecerá aqui."><select name="saida" id="saida" size="10"></select></abbr>
             <input type="button" value="Finalizar" onclick="analise()">
+        </div>
+        <div class="flex" id="resultado">
+
         </div>
     </section>
     <footer>
