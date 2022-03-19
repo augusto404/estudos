@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        button {
+            text-decoration: none;
+            border: none;
+            padding: 30px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            background-color: blueviolet;
+        }
+
+        button:hover {
+            cursor: grab;
+            background-color: rgb(191, 123, 255);
+            color: rgb(219, 238, 255);
+        }
+
+        div {
+            margin: auto;
+            padding: 50px;
+            width: 400px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body onload="load()">
+    <h1 id="resultado" onclick="redirect()">Clique em qualquer botão</h1>
+
+    <button type="button" onclick="func()">Botão 01</button>
+    <button type="button" onclick="func()">Botão 02</button>
+    <button type="button" onclick="func()">Botão 03</button>
+
+    <div onmousemove="mousemove(this)" onmouseout="mouseout(this)">Passe o mouse aqui...</div>
+    <div onmousemove="mousemove(this)" onmouseout="mouseout(this)">Passe o mouse aqui...</div>
+    <div onmousemove="mousemove(this)" onmouseout="mouseout(this)">Passe o mouse aqui...</div>
+
+    <select onchange="change(this)" size="1">
+        <option value="01">Valor 01</option>
+        <option value="02">Valor 02</option>
+        <option value="03">Valor 03</option>
+        <option value="04">Valor 04</option>
+    </select>
+
+    <script src="main.js"></script>
+</body>
+</html> 
