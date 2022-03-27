@@ -14,4 +14,4 @@
 - [Site Bootstrap](https://getbootstrap.com/)
 
 ## Exercício
-- [Exercício finalizado]()
+- [Exercício finalizado](https://github.com/augusto404/bootstrap-dio)
