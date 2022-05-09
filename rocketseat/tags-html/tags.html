@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script defer src="tags.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+    <details>
+        <summary>Título</summary> <!-- A tag que dá o nome que aparecerá quando a lista estiver fechada. -->
+        <section>
+            <div>Ítem 001</div>
+            <div>Ítem 002</div>
+            <div>Ítem 003</div>
+            <p>Ítem 004</p>
+            <p>Ítem 005</p>
+        </section>
+    </details>
+
+    <section>
+        <label for="Week"></label>
+        <input list="weekdays" type="text" name="Semana" id="Week">
+        <datalist id="weekdays">
+            <option value="Dom"></option>
+            <option value="Seg"></option>
+            <option value="Ter"></option>
+            <option value="Qua"></option>
+            <option value="Qui"></option>
+            <option value="Sex"></option>
+            <option value="Sab"></option>
+        </datalist>
+    </section>
+
+    <section>
+        <h2 contenteditable="">Lista de Tarefas</h2>
+        <ol contenteditable="true"> <!-- A string pode ficar vazia, ela será entendida como true da mesma forma. -->
+            <li>Task 001</li>
+            <li>Task 002</li>
+            <li>Task 003</li>
+            <li>Task 004</li>
+            <li>Task 005</li>
+        </ol>
+    </section>
+
+    <section>
+        <blockquote>
+            Lorem ipsum dolor, <mark>sit amet consectetur adipisicing elit</mark>. Ea molestias corrupti ab ipsam quibusdam labore aliquam sapiente. Veritatis assumenda, veniam consequatur iste rem perspiciatis minus repudiandae eaque voluptas? Perspiciatis, blanditiis.
+            <cite>Autor, Ano.</cite>
+        </blockquote>
+    </section>
+
+    <section>
+        <label for="disponibilidade">Em cartaz</label>
+        <select name="disponibilidade" id="disponibilidade">
+            <optgroup label="19:00hrs">
+                <option value="1">IT</option>
+                <option value="2">Invocação do Mal</option>
+                <option value="3">O Jogo da Imitação</option>
+            </optgroup>
+            <optgroup label="20:00hrs">
+                <option value="4">Matrix 1</option>
+                <option value="5">O Senhor dos Anéis</option>
+                <option value="6">Harry Potter</option>
+            </optgroup>
+        </select>
+    </section>
+
+    <section>
+        <progress value="50" max="100">Progress: 50%</progress> <!-- Versão estática. -->
+
+        <progress value="0" max="100" id="bar">Progress: 50%</progress> <!-- Versão animada. -->
+    </section>
+
+    <section>
+        <div> <!-- Range -->
+            <label for="volume">Range</label>
+            <input type="range" name="volume" id="volume" min="0" max="100">
+        </div>
+
+        <div> <!-- Data -->
+            <label for="data">Selecionar Data:</label>
+            <input type="date" name="data" id="data" min="2022-04-11" max="2022-05-10">
+        </div>
+
+        <div> <!-- Cor -->
+            <label for="cor">Selecionar Cor:</label>
+            <input type="color" name="cor" id="cor">
+        </div>
+
+        <div> <!-- Hora -->
+            <label for="hora">Selecionar Hora:</label>
+            <input type="time" name="hora" id="hora" value="13:00">
+        </div>
+    </section>
+
+    <section>
+        <code>
+            alert("Hello, world!");
+        </code>
+    </section>
+</body>
+</html>
