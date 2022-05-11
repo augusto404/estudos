@@ -19,7 +19,7 @@ function totalReceitasDespesas(receitas, despesas) {
     const saldoTotal = receitas - despesas;
     let situação;
 
-    receitas >= despesas ? situação = "POSITIVO" : saldo = "NEGATIVO";
+    receitas >= despesas ? situação = "POSITIVO" : situação = "NEGATIVO";
 
     return `A sua receita foi de ${receitas}, e sua despesa foi de ${despesas}. O seu saldo é de ${saldoTotal.toFixed(2)} e está ${situação}.`;
 };
