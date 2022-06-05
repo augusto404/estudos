@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex003</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        body {
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            padding: 1rem;
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+
+            background-color: blueviolet;
+            width: 50vw;
+            height: 80vh;
+
+            padding: 0.8rem;
+        }
+        .row {
+            display: flex;
+            gap: 0.8rem;
+            flex-grow: 1;
+        }
+        img {
+            flex-grow: 1;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nove Fotos, Três Colunas.</h1>
+    <section>
+        <div class="row">
+            <img src="img/img001.jpg" alt="Teclado de notebook">
+            <img src="img/img002.jpg" alt="Silhueta de montanhas">
+            <img src="img/img003.jpg" alt="Ilha com castelo no meio da praia">
+        </div>
+        <div class="row">
+            <img src="img/img004.jpg" alt="Pássaro se segurando verticalmente em um tronco de árvore">
+            <img src="img/img005.jpg" alt="Folhas de plantas">
+            <img src="img/img006.jpg" alt="Pôr do sol">
+        </div>
+        <div class="row">
+            <img src="img/img007.jpg" alt="Vista para um pedras em um lago, ponte concreto à esquerda">
+            <img src="img/img008.jpg" alt="Vista de cima de uma cidade à noite com prédios iluminados">
+            <img src="img/img009.jpg" alt="Lua">
+        </div>
+    </section>
+</body>
+</html>
