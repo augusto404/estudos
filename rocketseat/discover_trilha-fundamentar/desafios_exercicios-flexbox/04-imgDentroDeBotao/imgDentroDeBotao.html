@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex004</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            background-color: blueviolet;
+        }
+        h1 {
+            font-size: 3rem;
+            color: red;
+
+            margin-bottom: 2rem;
+
+            -webkit-text-stroke-width: 0.05rem;
+            -webkit-text-stroke-color: black;
+        }
+        div {
+            display: flex;
+            gap: 0.4rem;
+        }
+        button {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+
+            line-height: 0rem;
+            padding: 1rem;
+            border-radius: 0.3rem;
+            border: 0.05rem solid black;
+            
+            font-family: 'Lato', sans-serif;
+            font-size: 1.2rem;
+            color: white;
+            
+            background-color: rgb(73, 0, 128);
+        }
+        button:hover {
+            cursor: pointer;
+            font-weight: bold;
+            background-color: rgb(102, 0, 180);
+        }
+        img {
+            height: 1.2em;
+            filter: invert();
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Dentro De Botão</h1>
+    <div>
+        <button>
+            <img src="file-download.svg" alt="Download de arquivo">
+             Botão 001
+            </button>
+        <button>
+            Botão 002 
+            <img src="home.svg" alt="Home">
+        </button>
+    </div>
+</body>
+</html>
