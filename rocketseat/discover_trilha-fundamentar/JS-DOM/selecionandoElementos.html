@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionando elemento HTML com JS</title>
+</head>
+<body>
+    <h1 id="blog-tittle" class="classe">Meu Blog</h1>
+    <p class="classe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis eos officia! Commodi, at esse? Expedita corrupti nemo odit molestias ea cumque nulla modi labore nostrum. Pariatur ea nobis dignissimos.</p>
+
+    <script>
+        // Selecionar por ID
+        const Id = document.getElementById("blog-tittle"); // O retorno será o elemento inteiro com tag e atributos.
+        
+        // Selecionar por classe
+        const Class = document.getElementsByClassName("classe");
+
+        // Selecionar por tag
+        const Tag = document.getElementsByTagName("h1");
+
+        // Maneira mais geral e recomendada
+        // Suporta ids, classes, e tags
+        const Tittle = document.querySelector("#blog-tittle");
+        const Classe = document.querySelector(".classe");
+        const Header = document.querySelector("h1"); // O querySelector pega a primeira tag que achar no grupo.
+
+        // Grupos de nós
+        // Retorna uma lista com todos os conteúdos e permite a formatação usando forEach
+        const group = document.querySelectorAll(".classe");
+        group.forEach(element => console.log(element));
+
+        console.log(Header);
+    </script>
+</body>
+</html>
