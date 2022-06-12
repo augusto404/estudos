@@ -16,19 +16,21 @@
     <input type="text" value="Conteúdo original do input">
 
     <script>
-        /* Quando se cria um elemento com JS, ele precisa ser adicionado com append || prepend.
-        
-        Append == adiciona o elemento após o último filho do elemento selecionado anteriormente.
-        Prepend == adiciona o elemento antes do primeiro filho do elemento selecionado anteriormente.
+        /*
+        Colocar o elemento no meio do HTML:
         */
 
         const div = document.createElement("div");
         div.innerText = "Olá Devs!";
-        
-        const body = document.querySelector("body");
 
-        // body.prepend(div); /* Antes do primeiro filho. */
-        body.append(div); /* Após o último filho */
+        const body = document.querySelector("body");
+        const script = document.querySelector("script");
+
+        body.insertBefore(div, script); // A primeira variável é o elemento que vai ser adicionado, a segunda variável é o nó de referência para ser adicionado antes. Ou seja: adicionar a tag div antes da tag script.
+
+        // Não existe insertAfter. Para inserir após um elemento, usamos a .nextElementSibling no nó de referência:
+        const header = document.querySelector("header");
+        body.insertBefore(div, header.nextElementSibling);
     </script>
 </body>
 </html>
