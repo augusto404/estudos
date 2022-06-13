@@ -10,13 +10,20 @@
     <header>
         <h1>Meu Blog</h1>
     </header>
-    <main>
-        <input type="text">
-    </main>
+    
     <script>
-        const input = document.querySelector("input");
-        input.onkeypress = function(){
-            console.log("digitando...");
+        /* Ouvinte de eventos:
+        Primeiro argumento == tipo do evento
+        Segundo argumento == referência da função que será executada
+            - A função deve ser referenciada sem os parênteses, pois se forem colocados farão com que a função seja executada imediatamente sem a execução inicial do .addEventListener().
+        */
+        
+        const h1 = document.querySelector("h1");
+
+        h1.addEventListener("mouseover", printSomething);
+
+        function printSomething(){
+            console.log("alguma coisa...");
         };
     </script>
 </body>
