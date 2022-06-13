@@ -8,11 +8,15 @@
 </head>
 <body>
     <header>
-        <h1 onclick="printSomething()">Meu Blog</h1>
+        <h1>Meu Blog</h1>
     </header>
+    <main>
+        <input type="text">
+    </main>
     <script>
-        function printSomething() {
-            console.log("random text");
+        const input = document.querySelector("input");
+        input.onkeypress = function(){
+            console.log("digitando...");
         };
     </script>
 </body>
