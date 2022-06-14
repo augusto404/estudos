@@ -10,22 +10,18 @@
     <header>
         <h1>Meu Blog</h1>
     </header>
+
+    <input type="text">
     
     <script>
-        /* Maneira alternativa de adicionar eventos por JS:
-        Essa maneira limita a quantidade de eventos para um elemento em apenas uma. O evento que aparece por último no JS referente ao elemento HTML será executado.
+        /* Argumento event:
+        Passando o argumento event para uma função que será recebida por um evento, temos a possibilidade de manipular as informações do evento
         */
-        const h1 = document.querySelector("h1");
-        
-        h1.onclick = printSomething;
-        
-        function printSomething(){
-            console.log("texto...");
+        const input = document.querySelector("input");
+
+        input.onkeydown = function(event){
+            console.log(event.currentTarget.value); // O método .currentTarget mostra o foco atual, o .value pega o valor/dado que está sendo colocado no elemento em foco.
         };
-        
-        h1.onclick = function(){
-            console.log("outro texto.");
-        }
     </script>
 </body>
 </html>
