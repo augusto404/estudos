@@ -12,19 +12,20 @@
     </header>
     
     <script>
-        /* Ouvinte de eventos:
-        Primeiro argumento == tipo do evento
-        Segundo argumento == referência da função que será executada
-            - A função deve ser referenciada sem os parênteses, pois se forem colocados farão com que a função seja executada imediatamente sem a execução inicial do .addEventListener().
+        /* Maneira alternativa de adicionar eventos por JS:
+        Essa maneira limita a quantidade de eventos para um elemento em apenas uma. O evento que aparece por último no JS referente ao elemento HTML será executado.
         */
-        
         const h1 = document.querySelector("h1");
-
-        h1.addEventListener("mouseover", printSomething);
-
+        
+        h1.onclick = printSomething;
+        
         function printSomething(){
-            console.log("alguma coisa...");
+            console.log("texto...");
         };
+        
+        h1.onclick = function(){
+            console.log("outro texto.");
+        }
     </script>
 </body>
 </html>
