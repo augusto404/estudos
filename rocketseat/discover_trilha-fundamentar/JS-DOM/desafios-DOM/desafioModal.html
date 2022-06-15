@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Modal</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: grey;
+        }
+        #openModal {
+            text-align: center;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+            padding: 1rem 1.5rem;
+            background-color: purple;
+            
+            border: none;
+            border-radius: 0.3rem;
+            text-decoration: none;
+
+            cursor: pointer;
+        }
+        #window {
+            text-align: center;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            color: purple;
+            
+            padding: 1rem 1.5rem;
+            background-color: white;
+
+            border: 0.1rem dashed purple;
+            border-radius: 0.3rem;
+            text-decoration: none;
+        }
+        .displayNone {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="openModal">Abrir Janela</button>
+
+    <div id="window" class="displayNone">Tecle ESC para fechar</div>
+
+    <script>
+        const button = document.querySelector("#openModal");
+        const pressESC = document.querySelector("#window");
+
+        button.onclick = function(){
+            pressESC.classList.remove("displayNone");
+            button.classList.add("displayNone");
+        };
+
+        document.addEventListener("keydown", function(event){
+            const key = event.key;
+            if (key === "Escape"){
+                pressESC.classList.add("displayNone");
+                button.classList.remove("displayNone");
+            };
+        });
+    </script>
+</body>
+</html>
