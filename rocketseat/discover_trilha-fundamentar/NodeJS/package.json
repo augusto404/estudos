@@ -1,12 +1,17 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Meu primeiro pacote Node.",
   "main": "console.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "learning",
+    "javascript",
+    "npm",
+    "nodejs"
+  ],
+  "author": "Augusto",
   "license": "ISC"
 }
